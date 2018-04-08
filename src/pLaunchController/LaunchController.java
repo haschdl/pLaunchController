@@ -31,6 +31,7 @@ public class LaunchController {
     private static final String controlChangedEventName = "launchControllerChanged";
     private static final String knobChangedEventName = "launchControllerKnobChanged";
     private static final String padChangedEventName = "launchControllerPadChanged";
+    private PADMODE padMode;
 
     private Knob[] knobValues = new Knob[16];
 
@@ -140,7 +141,9 @@ public class LaunchController {
         deviceOut.getReceiver().send(getResetMessage(), 0);
 
 
+        setPadMode(PADMODE.TOGGLE);
     }
+
 
     /***
      * The status of a given {@link PADS} as a boolean value.
@@ -164,7 +167,7 @@ public class LaunchController {
     public void setPad(PADS pad, boolean value) {
         if (padStatus[(int) pad.code()] != value) {
             padStatus[(int) pad.code()] = value;
-            receiver.sendLedOn(value, pad);
+            receiver.sendLedOnOff(value, pad);
             midiLaunchControllerChanged();
             padChanged(pad);
         }
@@ -173,6 +176,7 @@ public class LaunchController {
 
     /**
      * Inverts the value and turns the given pad on and off.
+     *
      * @param pad
      */
     public void invertPad(PADS pad) {
@@ -250,4 +254,19 @@ public class LaunchController {
         }
     }
 
+    /**
+     * @return The {@link PADMODE} describing the mode of operation for pads.
+     */
+    public PADMODE getPadMode() {
+        return padMode;
+    }
+
+
+    /**
+     * Updates how the controller will handle pads. Default is {@link PADMODE#TOGGLE}.
+     * @param padMode The {@link PADMODE} describing the mode of operation for pads.
+     */
+    public void setPadMode(PADMODE padMode) {
+        this.padMode = padMode;
+    }
 }

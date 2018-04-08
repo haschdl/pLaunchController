@@ -93,7 +93,6 @@ void draw() {
     }
     endShape();
   }
-  saveFrame("frames/####.tiff");
 }
 void launchControllerChanged() {
   //This method is called by any changes in pads or knobs.
@@ -115,11 +114,11 @@ void launchControllerKnobChanged(KNOBS knob) {
   //maps r to the value of the first knob
   //getKnobMap() is the same as:
   //r = map(controller.getKnob(KNOBS.KNOB_1_HIGH), 0, 127, 100,500);
-  r = controller.getKnobMap(KNOBS.KNOB_1_HIGH,100,500);
-  m = controller.getKnobMap(KNOBS.KNOB_2_HIGH,0,100);
-  lat_start = controller.getKnobMap(KNOBS.KNOB_3_HIGH,-HALF_PI,0);
-  lat_end = controller.getKnobMap(KNOBS.KNOB_4_HIGH,0,HALF_PI);
-  lon_start = controller.getKnobMap(KNOBS.KNOB_5_HIGH,-PI,0);
-  lon_end = controller.getKnobMap(KNOBS.KNOB_6_HIGH,0,PI);
+  r = controller.getKnob(KNOBS.KNOB_1_HIGH).range(100,500).value(); 
+  m = controller.getKnob(KNOBS.KNOB_2_HIGH).range(0,100).value();
+  lat_start = controller.getKnob(KNOBS.KNOB_3_HIGH).range(-HALF_PI,0).value();
+  lat_end = controller.getKnob(KNOBS.KNOB_4_HIGH).range(0,HALF_PI).value();
+  lon_start = controller.getKnob(KNOBS.KNOB_5_HIGH).range(-PI,0).value();
+  lon_end = controller.getKnob(KNOBS.KNOB_6_HIGH).range(0,PI).value();
   
 }

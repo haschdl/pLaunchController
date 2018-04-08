@@ -82,6 +82,7 @@ class LaunchControllerReceiver implements Receiver {
                     parent.setKnobPosition(KNOBS.KNOB_8_LOW,lastMessage[2]);
                     break;
             }
+            return;
         }
         else if (lastMessage[0] == -104 ||lastMessage[0] == -120 ) { //PAD
             PADS padToChange = null;
@@ -126,16 +127,30 @@ class LaunchControllerReceiver implements Receiver {
                     }
                     break;
             }
+
+
             if(padToChange != null) {
                 parent.invertPad(padToChange);
-                sendLedOn(parent.getPad(padToChange), padToChange);
+                if (parent.getPadMode() == PADMODE.RADIO) {
+                    //switch off all other pads
+                    for (PADS pad : PADS.values()) {
+                        if(pad.equals(padToChange))
+                            sendLedOnOff(true, padToChange);
+                        else
+                            sendLedOnOff(false,pad);
+                    }
+                }
+                else if ( (parent.getPadMode() == PADMODE.TOGGLE))
+                    sendLedOnOff(parent.getPad(padToChange), padToChange);
+
+
             }
         }
     }
 
 
 
-    protected void  sendLedOn(boolean onOff, PADS pad) {
+    protected void sendLedOnOff(boolean onOff, PADS pad) {
         try {
             //Hex version F0h 00h 20h 29h 02h 0Ah 78h [Template] [LED] Value F7h
             //Where Template is 00h-07h (0-7) for the 8 user templates, and 08h-0Fh (8-15) for the 8 factory
