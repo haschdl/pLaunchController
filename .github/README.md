@@ -8,7 +8,7 @@ A JAVA wrapper for the Novation Launch Controller aimed at using the MIDI pads a
 In Processing, go to `Sketch`, `Import library...`, `Add library`. Search for "Launch Controller" and once found, click `Install`.
 ## Manual installation
 Copy the file pLaunchController.jar to a folder `code` inside your sketch. This method makes the library available to an individual sketch.
-If you intend to make the library available to all sketches, unzip the pLaunchController.zip file to the libraries of your Processing installation (you can see the library in Preferences page).
+If you intend to make the library available to all sketches, unzip the pLaunchController.zip file to the libraries of your Processing installation (you can see the default skecthbook location in File -> Preferences).
 
 # Usage
 To start using the library, make sure Novation Launch Controller is connected to your computer (at least one led is lit).
@@ -33,7 +33,13 @@ To start using the library, make sure Novation Launch Controller is connected to
           midiController = null;
       }
   ```
-  4. Implement one of the following methods in your sketch:
+  4. Optionally, use `range(float minValue,float maxValue)` to override the output of knob values, and `defaultValue(float value)` to set an initial value. By default, knobs will return values from 0 to 127.
+    
+  ```JAVA
+    controller.getKnob(KNOBS.KNOB_1_HIGH).range(10,200).defaultValue(h);
+  ``` 
+  
+  5. Implement one of the following methods in your sketch:
   
      * `void launchControllerKnobChanged(KNOBS knob)`
      
@@ -47,17 +53,14 @@ To start using the library, make sure Novation Launch Controller is connected to
   
   An example where I use `LaunchController.onKnobChanged(KNOBS knob)` to set a few variables:
    ```JAVA
-     void launchControllerKnobChanged(KNOBS knob) {
-       println("Launch Control knob changed: " + knob.name());
+    void launchControllerKnobChanged(KNOBS knob) {
+      println("Launch Control knob changed: " + knob.name());
 
-       //maps r to the value of the first knob
-       //getKnobMap() is the same as:
-       //r = map(controller.getKnob(KNOBS.KNOB_1_HIGH), 0, 127, 100,500);
-       r = controller.getKnobMap(KNOBS.KNOB_1_HIGH,100,500);
-       m = controller.getKnobMap(KNOBS.KNOB_2_HIGH,0,100);
-       lat_start = controller.getKnobMap(KNOBS.KNOB_3_HIGH,-HALF_PI,0);
-       lat_end = controller.getKnobMap(KNOBS.KNOB_4_HIGH,0,HALF_PI);
-       lon_start = controller.getKnobMap(KNOBS.KNOB_5_HIGH,-PI,0);
-       lon_end = controller.getKnobMap(KNOBS.KNOB_6_HIGH,0,PI);
-    }    
+      //Updates the values of h and base_w with the knob values
+      //Note that MIDI notes are 0-127, but you can override that in setup() by
+      //calling `range(float minValue,float maxValue)`
+      //For example: controller.getKnob(KNOBS.KNOB_1_HIGH).range(10,200)
+      h = controller.getKnob(KNOBS.KNOB_1_HIGH).value();
+      base_w = controller.getKnob(KNOBS.KNOB_2_HIGH).value();
+    }   
    ```
