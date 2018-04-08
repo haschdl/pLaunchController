@@ -1,3 +1,5 @@
+// Note: this example requires the contributed library "pEasyCam". You can install it from Processing
+// If this is first time using pEasyCam: go to menu Sketch -> Add library... -> Import library... Search for "peasycam" and click Install.
 // Example of the library pLaunchController. In this sketch, the knobs and pads of the Novation Launch Control
 // are used to control the variables of the image being generated.
 // This sketch is almost entirely the SuperShape3D implementation from Daniel Shiffman,
