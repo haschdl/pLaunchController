@@ -38,7 +38,8 @@ public class Knob {
         this.knob_position =   Math.round(MAX_POSITION * (defaultValue-min_value)/(max_value - min_value));
 
         this.hasDefault = true;
-        setFloatField(parent_object,variable,defaultValue);
+        if(variable != null)
+            setFloatField(parent_object,variable,defaultValue);
         return this;
     }
 
@@ -110,6 +111,7 @@ public class Knob {
 
     public Knob variable(String variable) {
         this.variable = variable;
+        setFloatField(parent_object,variable,value());
         return this;
     }
 
