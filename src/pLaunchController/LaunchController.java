@@ -81,7 +81,7 @@ public class LaunchController {
     public LaunchController(PApplet parent) throws MidiUnavailableException {
         this.parent = parent;
         for (int i = 0, l = KNOBS.values().length; i < l; i++) {
-            knobValues[i] = new Knob(i);
+            knobValues[i] = new Knob(i,parent);
         }
         infos = MidiSystem.getMidiDeviceInfo();
         for (MidiDevice.Info info : infos) {

@@ -26,9 +26,11 @@ public class Knob {
         controllerKnob = KNOBS.values()[knobCode];
         range(minValue,maxValue);
     }
-    protected Knob(int knobCode) {
+    protected Knob(int knobCode, Object parent) {
         controllerKnob = KNOBS.values()[knobCode];
+        parent_object = parent;
     }
+
     public Knob defaultValue(float defaultValue) {
         this.defaultValue = defaultValue;
 
