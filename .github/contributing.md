@@ -15,7 +15,7 @@ Delete the tag on any remote before you push:
 
 Replace the tag to reference the most recent commit:
 
-`git tag -fa latest`
+`git tag -fa latest` -m "Updated tag to most recent commit"`
 
 Push the tag to the remote origin:
 
