@@ -38,13 +38,17 @@ To start using the library, make sure Novation Launch Controller is connected to
           midiController = null;
       }
   ```
-  4. Optionally, use `range(float minValue,float maxValue)` to override the output of knob values, and `defaultValue(float value)` to set an initial value. By default, knobs will return values from 0 to 127.
+  
+  4. Attach a knob to a variable in your sketch.
+  
+  
+  5. Optionally, use `range(float minValue,float maxValue)` to override the output of knob values, and `defaultValue(float value)` to set an initial value. By default, knobs will return values from 0 to 127.
     
   ```JAVA
     controller.getKnob(KNOBS.KNOB_1_HIGH).range(10,200).defaultValue(h);
   ``` 
   
-  5. Implement one of the following methods in your sketch:
+  6. Optionally, implement one of the following methods in your sketch:
   
      * `void launchControllerKnobChanged(KNOBS knob)`
      
