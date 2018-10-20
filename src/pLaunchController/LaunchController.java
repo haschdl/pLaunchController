@@ -9,9 +9,18 @@ import javax.sound.midi.*;
 import static processing.core.PApplet.println;
 
 /***
- * A wrapper for the MIDI controller Novation LaunchControl.<br >
- * After instantiating a LaunchController, you can use the following events (*) to
- * track changes to knobs and pads: <br >
+ * A wrapper for the MIDI controller Novation LaunchControl.<br > The most trivial application of this
+ * wrapper is to adjust and control your Processing sketch using the knobs and pads of the controller,
+ * by attaching Knobs to variables.
+ *
+ * The easiest way to attach a Knob to a variable is to use {@see Knob.variable(String) Knob.variable(String variableName},
+ * inside Processing `setup()` method:
+ *
+ * {@code
+ *
+ * }
+ *
+ * Alternatively, you can also use the following events (*) to  track changes to knobs and pads: <br >
  *<p>
  * {@code  void launchControllerChanged()} is triggered when either a knob or a pad has changed.
  * This event does not provide additional information of which knob or pad has changed.<br >
@@ -20,7 +29,7 @@ import static processing.core.PApplet.println;
  * {@code  void launchControllerKnobChanged(KNOBS knob)} is trigger when a knob has changed.
  * The parameter knob will have the value of which knob was changed.<br >
  *</p>
- * {@code  void launchControllerPadChanged(PADS pad)} is triggered when a pad has switched states.
+ * TWO_PI + HALF_PI * .{@code  void launchControllerPadChanged(PADS pad)} is triggered when a pad has switched states.
  * The parameter pad will have the value of which pad was changed. <br >
  *
  * (*) In Processing, simply add a new method with the names and parameters as above.
@@ -52,6 +61,7 @@ public class LaunchController {
     public Knob getKnob(KNOBS knob) {
         return knobValues[knob.code()];
     }
+
 
 
     public void setKnobPosition(KNOBS knob, int position) {

@@ -1,7 +1,8 @@
 package pLaunchController;
 
 /**
- * The 16 knobs of the controller.
+ * The 16 knobs of the controller. Knobs from the upper row are named KNOB_x_HIGH, where x goes
+ * from 1 to 8, as labelled on the controller.
  */
 public enum KNOBS {
     KNOB_1_HIGH(0),
