@@ -2,10 +2,6 @@
 A JAVA wrapper for the Novation Launch Controller aimed at using the MIDI pads and knobs as input for Processing sketches.
 You can attach knobs to variables, and use the device to control and adjust your animation.
 
-In the animation, I use the knob to set variables in the supershape drawing, which is included in the [examples](examples/examples/SuperShape2D/SuperShape2D.pde).
-
-![](pLaunchController.gif)
-
 * [Installation](#installation)
 * [Quick guide](#quick-guide)
 * [Examples](#examples)
@@ -21,7 +17,7 @@ If you intend to make the library available to all sketches, unzip the pLaunchCo
 
 # Quick guide
 To start using the library, make sure Novation Launch Controller is connected to your computer (at least one led is lit).
-For more advanced usage, see also [Using events](using-events.md)
+For more advanced usage, see also [Using events](using-events.md).
 ## Add reference to library
   1. At the top of your sketch, import the namespace `pLaunchController`:
       ```JAVA
@@ -53,31 +49,24 @@ For more advanced usage, see also [Using events](using-events.md)
     controller.getKnob(KNOBS.KNOB_1_HIGH).range(10,200).defaultValue(h);
   ``` 
   
-  6. Optionally, implement one of the following methods in your sketch:
-  
-     * `void launchControllerKnobChanged(KNOBS knob)`
-     
-        Called when a knob was changed.
-     * `void launchControllerPadChanged(PADS pad)`
-     
-        Called when you push a pad.
-     * `void launchControllerControlChanged()`
-     
-        Called when either a pad or knob changes.
-  
-  An example where I use `LaunchController.onKnobChanged(KNOBS knob)` to set a few variables:
-   ```JAVA
-    void launchControllerKnobChanged(KNOBS knob) {
-      println("Launch Control knob changed: " + knob.name());
+# Examples
+Once you install the librarie from Processing, you can open the examples
+from `File -> Examples... -> Contributed Libraries ->  Novation LaunchController client`.
+See below a brief description for each example included.
 
-      //Updates the values of h and base_w with the knob values
-      //Note that MIDI notes are 0-127, but you can override that in setup() by
-      //calling `range(float minValue,float maxValue)`
-      //For example: controller.getKnob(KNOBS.KNOB_1_HIGH).range(10,200)
-      h = controller.getKnob(KNOBS.KNOB_1_HIGH).value();
-      base_w = controller.getKnob(KNOBS.KNOB_2_HIGH).value();
-    }   
-   ```
+## LaunchController Demo
+Shows the knobs and pads on a sketch. A simple way to test the library and the
+connectivity to your LaunchPad.
+
+![](LaunchControllerDemo.gif)
+[Source code](examples/LaunchControllerDemo/LaunchControllerDemo.pde)
+
+## SuperShape
+Based on the [original by Daniel Shiffman](https://youtu.be/akM4wMZIBWg), I used
+the controller to set the various parameters of the supershape algorithm.
+
+![](pLaunchController.gif)
+[Source code](examples/examples/SuperShape2D/SuperShape2D.pde)
 
 # Compatibility
 The library was developed in Windows 10 and it has been tested with Processing 3.3 

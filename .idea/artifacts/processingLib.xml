@@ -1,5 +1,5 @@
 <component name="ArtifactManager">
-  <artifact name="processingLib">
+  <artifact build-on-make="true" name="processingLib">
     <output-path>$PROJECT_DIR$/out/artifacts/</output-path>
     <root id="root">
       <element id="directory" name="pLaunchController">

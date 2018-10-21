@@ -6,80 +6,16 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79e7d7a1-5c5b-44e1-a6be-83c5765af82f" name="Default" comment="">
+    <list default="true" id="79e7d7a1-5c5b-44e1-a6be-83c5765af82f" name="Default" comment="New methods for getting normalized value of the knob. New example. Improved JavaDocs.">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.github/LaunchControllerDemo.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.github/using-events.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/examples/LaunchControllerDemo/LaunchControllerDemo.pde" />
+      <change beforePath="$PROJECT_DIR$/.github/README.md" afterPath="$PROJECT_DIR$/.github/README.md" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/processingLib.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/processingLib.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/examples/SuperShape2D/SuperShape2D.pde" afterPath="$PROJECT_DIR$/examples/SuperShape2D/SuperShape2D.pde" />
-      <change beforePath="$PROJECT_DIR$/library.properties" afterPath="$PROJECT_DIR$/library.properties" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController.zip" afterPath="$PROJECT_DIR$/out/artifacts/pLaunchController.zip" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/examples/SuperShape2D/SuperShape2D.pde" afterPath="$PROJECT_DIR$/out/artifacts/pLaunchController/examples/SuperShape2D/SuperShape2D.pde" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/library/pLaunchController.jar" afterPath="$PROJECT_DIR$/out/artifacts/pLaunchController/library/pLaunchController.jar" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/allclasses-frame.html" afterPath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/allclasses-frame.html" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/allclasses-noframe.html" afterPath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/allclasses-noframe.html" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/constant-values.html" afterPath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/constant-values.html" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/deprecated-list.html" afterPath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/deprecated-list.html" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/help-doc.html" afterPath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/help-doc.html" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/index-files/index-1.html" afterPath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/index-files/index-1.html" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/index-files/index-10.html" afterPath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/index-files/index-10.html" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/index-files/index-11.html" afterPath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/index-files/index-11.html" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/index-files/index-12.html" afterPath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/index-files/index-12.html" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/index-files/index-13.html" afterPath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/index-files/index-13.html" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/index-files/index-14.html" afterPath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/index-files/index-14.html" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/index-files/index-2.html" afterPath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/index-files/index-2.html" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/index-files/index-3.html" afterPath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/index-files/index-3.html" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/index-files/index-4.html" afterPath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/index-files/index-4.html" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/index-files/index-5.html" afterPath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/index-files/index-5.html" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/index-files/index-6.html" afterPath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/index-files/index-6.html" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/index-files/index-7.html" afterPath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/index-files/index-7.html" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/index-files/index-8.html" afterPath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/index-files/index-8.html" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/index-files/index-9.html" afterPath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/index-files/index-9.html" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/index.html" afterPath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/index.html" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/overview-tree.html" afterPath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/overview-tree.html" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/pLaunchController/KNOBS.html" afterPath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/pLaunchController/KNOBS.html" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/pLaunchController/Knob.html" afterPath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/pLaunchController/Knob.html" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/pLaunchController/LaunchController.html" afterPath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/pLaunchController/LaunchController.html" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/pLaunchController/LedConstants.html" afterPath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/pLaunchController/LedConstants.html" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/pLaunchController/PADS.html" afterPath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/pLaunchController/PADS.html" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/pLaunchController/package-frame.html" afterPath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/pLaunchController/package-frame.html" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/pLaunchController/package-summary.html" afterPath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/pLaunchController/package-summary.html" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/pLaunchController/package-tree.html" afterPath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/pLaunchController/package-tree.html" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/src/pLaunchController/KNOBS.java" afterPath="$PROJECT_DIR$/out/artifacts/pLaunchController/src/pLaunchController/KNOBS.java" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/src/pLaunchController/Knob.java" afterPath="$PROJECT_DIR$/out/artifacts/pLaunchController/src/pLaunchController/Knob.java" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/src/pLaunchController/LaunchController.java" afterPath="$PROJECT_DIR$/out/artifacts/pLaunchController/src/pLaunchController/LaunchController.java" />
-      <change beforePath="$PROJECT_DIR$/out/production/pLaunchController/pLaunchController/KNOBS.class" afterPath="$PROJECT_DIR$/out/production/pLaunchController/pLaunchController/KNOBS.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/pLaunchController/pLaunchController/Knob.class" afterPath="$PROJECT_DIR$/out/production/pLaunchController/pLaunchController/Knob.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/pLaunchController/pLaunchController/LaunchController.class" afterPath="$PROJECT_DIR$/out/production/pLaunchController/pLaunchController/LaunchController.class" />
-      <change beforePath="$PROJECT_DIR$/reference/allclasses-frame.html" afterPath="$PROJECT_DIR$/reference/allclasses-frame.html" />
-      <change beforePath="$PROJECT_DIR$/reference/allclasses-noframe.html" afterPath="$PROJECT_DIR$/reference/allclasses-noframe.html" />
-      <change beforePath="$PROJECT_DIR$/reference/constant-values.html" afterPath="$PROJECT_DIR$/reference/constant-values.html" />
-      <change beforePath="$PROJECT_DIR$/reference/deprecated-list.html" afterPath="$PROJECT_DIR$/reference/deprecated-list.html" />
-      <change beforePath="$PROJECT_DIR$/reference/help-doc.html" afterPath="$PROJECT_DIR$/reference/help-doc.html" />
-      <change beforePath="$PROJECT_DIR$/reference/index-files/index-1.html" afterPath="$PROJECT_DIR$/reference/index-files/index-1.html" />
-      <change beforePath="$PROJECT_DIR$/reference/index-files/index-10.html" afterPath="$PROJECT_DIR$/reference/index-files/index-10.html" />
-      <change beforePath="$PROJECT_DIR$/reference/index-files/index-11.html" afterPath="$PROJECT_DIR$/reference/index-files/index-11.html" />
-      <change beforePath="$PROJECT_DIR$/reference/index-files/index-12.html" afterPath="$PROJECT_DIR$/reference/index-files/index-12.html" />
-      <change beforePath="$PROJECT_DIR$/reference/index-files/index-13.html" afterPath="$PROJECT_DIR$/reference/index-files/index-13.html" />
-      <change beforePath="$PROJECT_DIR$/reference/index-files/index-14.html" afterPath="$PROJECT_DIR$/reference/index-files/index-14.html" />
-      <change beforePath="$PROJECT_DIR$/reference/index-files/index-2.html" afterPath="$PROJECT_DIR$/reference/index-files/index-2.html" />
-      <change beforePath="$PROJECT_DIR$/reference/index-files/index-3.html" afterPath="$PROJECT_DIR$/reference/index-files/index-3.html" />
-      <change beforePath="$PROJECT_DIR$/reference/index-files/index-4.html" afterPath="$PROJECT_DIR$/reference/index-files/index-4.html" />
-      <change beforePath="$PROJECT_DIR$/reference/index-files/index-5.html" afterPath="$PROJECT_DIR$/reference/index-files/index-5.html" />
-      <change beforePath="$PROJECT_DIR$/reference/index-files/index-6.html" afterPath="$PROJECT_DIR$/reference/index-files/index-6.html" />
-      <change beforePath="$PROJECT_DIR$/reference/index-files/index-7.html" afterPath="$PROJECT_DIR$/reference/index-files/index-7.html" />
-      <change beforePath="$PROJECT_DIR$/reference/index-files/index-8.html" afterPath="$PROJECT_DIR$/reference/index-files/index-8.html" />
-      <change beforePath="$PROJECT_DIR$/reference/index-files/index-9.html" afterPath="$PROJECT_DIR$/reference/index-files/index-9.html" />
-      <change beforePath="$PROJECT_DIR$/reference/index.html" afterPath="$PROJECT_DIR$/reference/index.html" />
-      <change beforePath="$PROJECT_DIR$/reference/overview-tree.html" afterPath="$PROJECT_DIR$/reference/overview-tree.html" />
-      <change beforePath="$PROJECT_DIR$/reference/pLaunchController/KNOBS.html" afterPath="$PROJECT_DIR$/reference/pLaunchController/KNOBS.html" />
-      <change beforePath="$PROJECT_DIR$/reference/pLaunchController/Knob.html" afterPath="$PROJECT_DIR$/reference/pLaunchController/Knob.html" />
-      <change beforePath="$PROJECT_DIR$/reference/pLaunchController/LaunchController.html" afterPath="$PROJECT_DIR$/reference/pLaunchController/LaunchController.html" />
-      <change beforePath="$PROJECT_DIR$/reference/pLaunchController/LedConstants.html" afterPath="$PROJECT_DIR$/reference/pLaunchController/LedConstants.html" />
-      <change beforePath="$PROJECT_DIR$/reference/pLaunchController/PADS.html" afterPath="$PROJECT_DIR$/reference/pLaunchController/PADS.html" />
-      <change beforePath="$PROJECT_DIR$/reference/pLaunchController/package-frame.html" afterPath="$PROJECT_DIR$/reference/pLaunchController/package-frame.html" />
-      <change beforePath="$PROJECT_DIR$/reference/pLaunchController/package-summary.html" afterPath="$PROJECT_DIR$/reference/pLaunchController/package-summary.html" />
-      <change beforePath="$PROJECT_DIR$/reference/pLaunchController/package-tree.html" afterPath="$PROJECT_DIR$/reference/pLaunchController/package-tree.html" />
-      <change beforePath="$PROJECT_DIR$/src/pLaunchController/KNOBS.java" afterPath="$PROJECT_DIR$/src/pLaunchController/KNOBS.java" />
-      <change beforePath="$PROJECT_DIR$/src/pLaunchController/Knob.java" afterPath="$PROJECT_DIR$/src/pLaunchController/Knob.java" />
-      <change beforePath="$PROJECT_DIR$/src/pLaunchController/LaunchController.java" afterPath="$PROJECT_DIR$/src/pLaunchController/LaunchController.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -91,85 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LaunchController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pLaunchController/LaunchController.java">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="20">
-              <caret line="66" column="31" lean-forward="false" selection-start-line="66" selection-start-column="23" selection-end-line="66" selection-end-column="31" />
-              <folding>
-                <element signature="e#2248#2249#0" expanded="true" />
-                <element signature="e#2294#2295#0" expanded="true" />
-                <element signature="method#setKnobValueRange#0;class#LaunchController#0" expanded="false" />
-                <element signature="e#9640#9641#0" expanded="true" />
-                <element signature="e#9678#9679#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pLaunchController.iml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pLaunchController.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Knob.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pLaunchController/Knob.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="137" column="15" lean-forward="false" selection-start-line="137" selection-start-column="15" selection-end-line="137" selection-end-column="15" />
-              <folding>
-                <element signature="e#6710#6711#0" expanded="true" />
-                <element signature="e#6751#6752#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LaunchControllerDemo.pde" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/out/artifacts/pLaunchController/examples/LaunchControllerDemo/LaunchControllerDemo.pde">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="900">
-              <caret line="75" column="0" lean-forward="true" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#2077#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="library.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/library.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="960">
-              <caret line="48" column="19" lean-forward="false" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contributing.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.github/contributing.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PADS.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pLaunchController/PADS.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="620">
-              <caret line="31" column="18" lean-forward="false" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+              <caret line="1" column="6" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -197,6 +59,7 @@
       <find>default</find>
       <find>value(</find>
       <find>position</find>
+      <find>getPad</find>
     </findStrings>
     <replaceStrings>
       <replace>_LOW</replace>
@@ -221,8 +84,6 @@
         <option value="$PROJECT_DIR$/src/pLaunchController/PADS.java" />
         <option value="$PROJECT_DIR$/src/pLaunchController/PADMODE.java" />
         <option value="$PROJECT_DIR$/src/pLaunchController/LaunchControllerReceiver.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/.github/README.md" />
         <option value="$PROJECT_DIR$/.github/contributing.md" />
         <option value="$PROJECT_DIR$/src/pLaunchController/KNOBS.java" />
         <option value="$PROJECT_DIR$/library.properties" />
@@ -230,6 +91,9 @@
         <option value="$PROJECT_DIR$/src/pLaunchController/Knob.java" />
         <option value="$PROJECT_DIR$/src/pLaunchController/LaunchController.java" />
         <option value="$PROJECT_DIR$/out/artifacts/pLaunchController/examples/LaunchControllerDemo/LaunchControllerDemo.pde" />
+        <option value="$PROJECT_DIR$/.github/using-events.md" />
+        <option value="$PROJECT_DIR$/.github/README.md" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -257,6 +121,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -277,36 +142,30 @@
             <path>
               <item name="pLaunchController" type="b2602c69:ProjectViewProjectNode" />
               <item name="pLaunchController" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="examples" type="462c0819:PsiDirectoryNode" />
+              <item name="LaunchControllerDemo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pLaunchController" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pLaunchController" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pLaunchController" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pLaunchController" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="pLaunchController" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pLaunchController" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pLaunchController" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
               <item name="pLaunchController" type="462c0819:PsiDirectoryNode" />
               <item name="examples" type="462c0819:PsiDirectoryNode" />
+              <item name="SuperShape2D" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pLaunchController" type="b2602c69:ProjectViewProjectNode" />
               <item name="pLaunchController" type="462c0819:PsiDirectoryNode" />
               <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pLaunchController" type="b2602c69:ProjectViewProjectNode" />
               <item name="pLaunchController" type="462c0819:PsiDirectoryNode" />
-              <item name="library" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pLaunchController" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pLaunchController" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pLaunchController" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -314,19 +173,26 @@
       </pane>
       <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/library.properties" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="pLaunchController" />
     <property name="GenerateAntBuildDialog.generateSingleFile" value="true" />
     <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\CreativeCoding\Java\pLaunchController\.github" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\CreativeCoding\Java\pLaunchController\examples" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -533,7 +399,14 @@
       <option name="project" value="LOCAL" />
       <updated>1539807074546</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="New methods for getting normalized value of the knob. New example. Improved JavaDocs.">
+      <created>1540034517674</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1540034517674</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -546,10 +419,10 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14947917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2640625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -580,7 +453,8 @@
     <MESSAGE value="Update values for next release" />
     <MESSAGE value="Add contributing info for updating tags and updated IntelliJ build." />
     <MESSAGE value="Small updates to build definitions" />
-    <option name="LAST_COMMIT_MESSAGE" value="Small updates to build definitions" />
+    <MESSAGE value="New methods for getting normalized value of the knob. New example. Improved JavaDocs." />
+    <option name="LAST_COMMIT_MESSAGE" value="New methods for getting normalized value of the knob. New example. Improved JavaDocs." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -606,39 +480,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/pLaunchController/LaunchController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1420">
-          <caret line="83" column="45" lean-forward="false" selection-start-line="83" selection-start-column="45" selection-end-line="83" selection-end-column="45" />
-          <folding>
-            <element signature="e#2248#2249#0" expanded="true" />
-            <element signature="e#2294#2295#0" expanded="true" />
-            <element signature="method#setKnobValueRange#0;class#LaunchController#0" expanded="false" />
-            <element signature="e#9640#9641#0" expanded="true" />
-            <element signature="e#9678#9679#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pLaunchController/LaunchControllerReceiver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="36" column="33" lean-forward="false" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pLaunchController/KNOBS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding>
-            <element signature="e#612#613#0" expanded="true" />
-            <element signature="e#650#651#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/examples/SuperShape2D/SuperShape2D.pde">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -924,63 +765,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.github/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1480">
-            <caret line="74" column="46" lean-forward="false" selection-start-line="74" selection-start-column="46" selection-end-line="74" selection-end-column="46" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/export.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.github/contributing.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pLaunchController/PADS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="31" column="18" lean-forward="false" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/SuperShape2D/SuperShape2D.pde">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="33" column="69" lean-forward="false" selection-start-line="33" selection-start-column="69" selection-end-line="33" selection-end-column="69" />
-          <folding>
-            <element signature="e#0#4127#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -996,7 +784,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1020,17 +807,99 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pLaunchController/PADS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="31" column="18" lean-forward="false" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.github/pLaunchController.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.github/LaunchControllerDemo.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.github/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="120">
+            <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.github/using-events.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="680">
+            <caret line="34" column="4" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="34" selection-end-column="4" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/SuperShape2D/SuperShape2D.pde">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="15" lean-forward="true" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.github/contributing.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="420">
+            <caret line="21" column="1" lean-forward="false" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="30" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/LaunchControllerDemo/LaunchControllerDemo.pde">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="790">
+          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
           <folding>
-            <element signature="e#612#613#0" expanded="true" />
-            <element signature="e#650#651#0" expanded="true" />
+            <element signature="e#0#2077#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pLaunchController/Knob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="137" column="15" lean-forward="false" selection-start-line="137" selection-start-column="15" selection-end-line="137" selection-end-column="15" />
+          <folding>
+            <element signature="e#6710#6711#0" expanded="true" />
+            <element signature="e#6751#6752#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pLaunchController/LaunchController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="66" column="31" lean-forward="false" selection-start-line="66" selection-start-column="23" selection-end-line="66" selection-end-column="31" />
+        <state relative-caret-position="170">
+          <caret line="159" column="99" lean-forward="false" selection-start-line="159" selection-start-column="93" selection-end-line="159" selection-end-column="99" />
           <folding>
             <element signature="e#2248#2249#0" expanded="true" />
             <element signature="e#2294#2295#0" expanded="true" />
@@ -1041,24 +910,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pLaunchController/Knob.java">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="137" column="15" lean-forward="false" selection-start-line="137" selection-start-column="15" selection-end-line="137" selection-end-column="15" />
-          <folding>
-            <element signature="e#6710#6711#0" expanded="true" />
-            <element signature="e#6751#6752#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/artifacts/pLaunchController/examples/LaunchControllerDemo/LaunchControllerDemo.pde">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="75" column="0" lean-forward="true" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#2077#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="20">
+          <caret line="1" column="6" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1069,8 +925,8 @@
         <settings>
           <artifact-editor>
             <show-content>
-              <type id="artifact" />
               <type id="library" />
+              <type id="artifact" />
             </show-content>
           </artifact-editor>
           <last-edited>processingLib</last-edited>
