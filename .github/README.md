@@ -7,7 +7,6 @@ You can attach knobs to variables, and use the device to control and adjust your
 * [Examples](#examples)
 
 
- 
 # Installation
 ## From Processing editor
 In Processing, go to `Sketch`, `Import library...`, `Add library`. Search for "Novation Launch Controller client" and once found, click `Install`.
@@ -50,7 +49,7 @@ For more advanced usage, see also [Using events](using-events.md).
   ``` 
   
 # Examples
-Once you install the librarie from Processing, you can open the examples
+Once you install the library from Processing, you can open the examples
 from `File -> Examples... -> Contributed Libraries ->  Novation LaunchController client`.
 See below a brief description for each example included.
 
@@ -58,14 +57,14 @@ See below a brief description for each example included.
 Shows the knobs and pads on a sketch. A simple way to test the library and the
 connectivity to your LaunchPad.
 
-![](LaunchControllerDemo.gif)
+![](LaunchControllerDemo.gif)  
 [Source code](examples/LaunchControllerDemo/LaunchControllerDemo.pde)
 
 ## SuperShape
 Based on the [original by Daniel Shiffman](https://youtu.be/akM4wMZIBWg), I used
 the controller to set the various parameters of the supershape algorithm.
 
-![](pLaunchController.gif)
+![](pLaunchController.gif)  
 [Source code](examples/examples/SuperShape2D/SuperShape2D.pde)
 
 # Compatibility
