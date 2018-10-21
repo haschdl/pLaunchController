@@ -2,6 +2,8 @@
 A JAVA wrapper for the Novation Launch Controller aimed at using the MIDI pads and knobs as input for Processing sketches.
 You can attach knobs to variables, and use the device to control and adjust your animation.
 
+In the animation, I use the knob to set variables in the supershape drawing, which is included in the [examples](examples/examples/SuperShape2D/SuperShape2D.pde).
+
 ![](pLaunchController.gif)
 
 * [Installation](#installation)
