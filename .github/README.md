@@ -58,14 +58,14 @@ Shows the knobs and pads on a sketch. A simple way to test the library and the
 connectivity to your LaunchPad.
 
 ![](LaunchControllerDemo.gif)  
-[Source code](examples/LaunchControllerDemo/LaunchControllerDemo.pde)
+[Source code](/examples/LaunchControllerDemo/LaunchControllerDemo.pde)
 
 ## SuperShape
 Based on the [original by Daniel Shiffman](https://youtu.be/akM4wMZIBWg), I used
 the controller to set the various parameters of the supershape algorithm.
 
 ![](pLaunchController.gif)  
-[Source code](examples/examples/SuperShape2D/SuperShape2D.pde)
+[Source code](/examples/examples/SuperShape2D/SuperShape2D.pde)
 
 # Compatibility
 The library was developed in Windows 10 and it has been tested with Processing 3.3 
