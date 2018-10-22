@@ -63,7 +63,6 @@ public class LaunchController {
     }
 
 
-
     public void setKnobPosition(KNOBS knob, int position) {
         int curPosition = knobValues[knob.code()].position();
         int newPosition = knobValues[knob.code()].position(position).position();
@@ -91,7 +90,7 @@ public class LaunchController {
     public LaunchController(PApplet parent) throws MidiUnavailableException {
         this.parent = parent;
         for (int i = 0, l = KNOBS.values().length; i < l; i++) {
-            knobValues[i] = new Knob(i,parent);
+            knobValues[i] = new Knob(i, parent);
         }
         infos = MidiSystem.getMidiDeviceInfo();
         for (MidiDevice.Info info : infos) {
@@ -133,25 +132,23 @@ public class LaunchController {
             // no such method, or an error.. which is fine, just ignore
         }
 
-        if (controllerChangedEventMethod == null
-                && padChangedEventName == null
-                && knobChangedEventMethod == null) {
-            println("WARNING! This sketch is not tracking any changes to the Launch Control. Make sure you sketch includes at least one of the following:");
-            println("   void " + controlChangedEventName + "()");
-            println("   void " + padChangedEventName + "(PADS pad)");
-            println("   void " + knobChangedEventMethod + "(KNOBS knob)");
-
-        }
 
         deviceIn.open();
         deviceOut.open();
 
         receiver = new LaunchControllerReceiver(this, deviceOut);
+
         deviceIn.getTransmitter().setReceiver(receiver);
-        deviceOut.getReceiver().send(getResetMessage(), 0);
+
+
+        println("Resetting the controller...");
+        deviceOut.getReceiver().send(Utils.getResetMessage(), 0);
+        println("Setting to factory template...");
+        deviceOut.getReceiver().send(Utils.getSetTemplateMessage(), 0);
 
 
         setPadMode(PADMODE.TOGGLE);
+        println("LaunchController ready!");
     }
 
 
@@ -239,15 +236,6 @@ public class LaunchController {
         }
     }
 
-    private static MidiMessage getResetMessage() {
-        try {
-            ShortMessage reset = new ShortMessage(184, 0, 0);
-            return reset;
-        } catch (InvalidMidiDataException e) {
-            return null;
-        }
-    }
-
 
     /***
      * Clean-up operations executed when when
@@ -274,6 +262,7 @@ public class LaunchController {
 
     /**
      * Updates how the controller will handle pads. Default is {@link PADMODE#TOGGLE}.
+     *
      * @param padMode The {@link PADMODE} describing the mode of operation for pads.
      */
     public void setPadMode(PADMODE padMode) {
