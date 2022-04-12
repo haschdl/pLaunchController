@@ -6,21 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79e7d7a1-5c5b-44e1-a6be-83c5765af82f" name="Default" comment="Initial renaming from pLaunchController to pLaunchControl. It does not include updates to documentation.&#10;Relates to #6">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/processingLibrariesLocal.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/LaunchControlXLDemo/LaunchControlXLDemo.pde" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pLaunchControl/LaunchControlDeviceReceiver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pLaunchControl/LaunchControlXL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pLaunchControl/MidiDevice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pLaunchControl/Pad.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pLaunchControl/SLIDERS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pLaunchControl/Slider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/.github/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/processingLib.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/LaunchControllerDemo/LaunchControllerDemo.pde" beforeDir="false" afterPath="$PROJECT_DIR$/examples/LaunchControlDemo/LaunchControlDemo.pde" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/SuperShape2D/SuperShape2D.pde" beforeDir="false" afterPath="$PROJECT_DIR$/examples/SuperShape2D/SuperShape2D.pde" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/Vertices/Vertices.pde" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Vertices/Vertices.pde" afterDir="false" />
+    <list default="true" id="79e7d7a1-5c5b-44e1-a6be-83c5765af82f" name="Default" comment="Udpated references to pLaunchControl and small change to artefact creation">
       <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/examples/SuperShape2D/SuperShape2D.pde" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/examples/Vertices/Vertices.pde" beforeDir="false" />
@@ -100,12 +86,6 @@
       <change beforePath="$PROJECT_DIR$/reference/pLaunchController/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/pLaunchController/package-summary.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reference/pLaunchController/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/pLaunchController/package-tree.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reference/package-list" beforeDir="false" afterPath="$PROJECT_DIR$/reference/package-list" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pLaunchControl/KNOBS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pLaunchControl/KNOBS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pLaunchControl/Knob.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pLaunchControl/Knob.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pLaunchControl/LaunchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pLaunchControl/LaunchControl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pLaunchControl/LaunchControllerReceiver.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pLaunchControl/PADMODE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pLaunchControl/PADMODE.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pLaunchControl/PADS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pLaunchControl/PADS.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -485,7 +465,28 @@
       <option name="project" value="LOCAL" />
       <updated>1649758928882</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Implementation of LaunchControlXL.java and the required refactoring related to it. This change introduces issue #7">
+      <created>1649770978347</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1649770978347</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Implementation of LaunchControlXL.java and the required refactoring related to it. This change introduces issue #7">
+      <created>1649771238101</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1649771238101</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Udpated references to pLaunchControl and small change to artefact creation">
+      <created>1649771327186</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1649771327186</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -526,7 +527,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="processing4" />
+                        <option value="launchControlXL" />
                       </list>
                     </value>
                   </entry>
@@ -553,7 +554,9 @@
     <MESSAGE value="Small updates to build definitions" />
     <MESSAGE value="New methods for getting normalized value of the knob. New example. Improved JavaDocs." />
     <MESSAGE value="Initial renaming from pLaunchController to pLaunchControl. It does not include updates to documentation.&#10;Relates to #6" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial renaming from pLaunchController to pLaunchControl. It does not include updates to documentation.&#10;Relates to #6" />
+    <MESSAGE value="Implementation of LaunchControlXL.java and the required refactoring related to it. This change introduces issue #7" />
+    <MESSAGE value="Udpated references to pLaunchControl and small change to artefact creation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Udpated references to pLaunchControl and small change to artefact creation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
