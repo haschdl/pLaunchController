@@ -2,19 +2,25 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="processingLib" />
+      <artifact name="processingLibrariesLocal" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79e7d7a1-5c5b-44e1-a6be-83c5765af82f" name="Default" comment="New methods for getting normalized value of the knob. New example. Improved JavaDocs.">
+    <list default="true" id="79e7d7a1-5c5b-44e1-a6be-83c5765af82f" name="Default" comment="Initial renaming from pLaunchController to pLaunchControl. It does not include updates to documentation.&#10;Relates to #6">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/processingLibrariesLocal.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/LaunchControlXLDemo/LaunchControlXLDemo.pde" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pLaunchControl/LaunchControlDeviceReceiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pLaunchControl/LaunchControlXL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pLaunchControl/MidiDevice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pLaunchControl/Pad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pLaunchControl/SLIDERS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pLaunchControl/Slider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.github/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/.github/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/contributing.md" beforeDir="false" afterPath="$PROJECT_DIR$/.github/contributing.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/processingLib.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/LaunchControllerDemo/LaunchControllerDemo.pde" beforeDir="false" afterPath="$PROJECT_DIR$/examples/LaunchControllerDemo/LaunchControllerDemo.pde" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/LaunchControllerDemo/LaunchControllerDemo.pde" beforeDir="false" afterPath="$PROJECT_DIR$/examples/LaunchControlDemo/LaunchControlDemo.pde" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/SuperShape2D/SuperShape2D.pde" beforeDir="false" afterPath="$PROJECT_DIR$/examples/SuperShape2D/SuperShape2D.pde" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/examples/Vertices/Vertices.pde" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Vertices/Vertices.pde" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/export.txt" beforeDir="false" afterPath="$PROJECT_DIR$/export.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/examples/SuperShape2D/SuperShape2D.pde" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/examples/Vertices/Vertices.pde" beforeDir="false" />
@@ -54,13 +60,6 @@
       <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/package-list" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/script.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/stylesheet.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/src/pLaunchController/KNOBS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pLaunchControl/KNOBS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/src/pLaunchController/Knob.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pLaunchControl/Knob.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/src/pLaunchController/LaunchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pLaunchControl/LaunchController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/src/pLaunchController/LaunchControllerReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pLaunchControl/LaunchControllerReceiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/src/pLaunchController/LedConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pLaunchControl/LedConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/src/pLaunchController/PADMODE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pLaunchControl/PADMODE.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/src/pLaunchController/PADS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pLaunchControl/PADS.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/pLaunchController/pLaunchController/KNOBS.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/pLaunchController/pLaunchController/Knob.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/pLaunchController/pLaunchController/LaunchController.class" beforeDir="false" />
@@ -68,7 +67,6 @@
       <change beforePath="$PROJECT_DIR$/out/production/pLaunchController/pLaunchController/LedConstants.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/pLaunchController/pLaunchController/PADMODE.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/pLaunchController/pLaunchController/PADS.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pLaunchController.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchController.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reference/allclasses-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/allclasses-frame.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reference/allclasses-noframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/allclasses-noframe.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reference/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/constant-values.html" afterDir="false" />
@@ -102,19 +100,22 @@
       <change beforePath="$PROJECT_DIR$/reference/pLaunchController/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/pLaunchController/package-summary.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reference/pLaunchController/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/pLaunchController/package-tree.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reference/package-list" beforeDir="false" afterPath="$PROJECT_DIR$/reference/package-list" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pLaunchController/KNOBS.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pLaunchController/Knob.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pLaunchController/LaunchController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pLaunchController/LaunchControllerReceiver.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pLaunchController/LedConstants.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pLaunchController/PADMODE.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pLaunchController/PADS.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pLaunchController/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pLaunchControl/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pLaunchControl/KNOBS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pLaunchControl/KNOBS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pLaunchControl/Knob.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pLaunchControl/Knob.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pLaunchControl/LaunchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pLaunchControl/LaunchControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pLaunchControl/LaunchControllerReceiver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pLaunchControl/PADMODE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pLaunchControl/PADMODE.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pLaunchControl/PADS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pLaunchControl/PADS.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -153,6 +154,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -181,6 +190,12 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="NamedScopeManager">
+    <scope name="MD files" pattern="*.md" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="260" />
@@ -272,19 +287,24 @@
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="pLaunchController" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/examples" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/examples" />
       <recent name="C:\CreativeCoding\Java\pLaunchController\.github" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/examples/LaunchControllerDemo" />
       <recent name="C:\CreativeCoding\Java\pLaunchController\examples" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pLaunchControl" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Unnamed">
@@ -458,7 +478,14 @@
       <option name="project" value="LOCAL" />
       <updated>1540034517674</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Initial renaming from pLaunchController to pLaunchControl. It does not include updates to documentation.&#10;Relates to #6">
+      <created>1649758928882</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1649758928882</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -525,17 +552,18 @@
     <MESSAGE value="Add contributing info for updating tags and updated IntelliJ build." />
     <MESSAGE value="Small updates to build definitions" />
     <MESSAGE value="New methods for getting normalized value of the knob. New example. Improved JavaDocs." />
-    <option name="LAST_COMMIT_MESSAGE" value="New methods for getting normalized value of the knob. New example. Improved JavaDocs." />
+    <MESSAGE value="Initial renaming from pLaunchController to pLaunchControl. It does not include updates to documentation.&#10;Relates to #6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial renaming from pLaunchController to pLaunchControl. It does not include updates to documentation.&#10;Relates to #6" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/pLaunchControl/LaunchControllerReceiver.java</url>
+          <url>file://$PROJECT_DIR$/src/pLaunchControl/LaunchControlDeviceReceiver.java</url>
           <line>31</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/pLaunchControl/LaunchController.java</url>
+          <url>file://$PROJECT_DIR$/src/pLaunchControl/LaunchControl.java</url>
           <line>61</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>

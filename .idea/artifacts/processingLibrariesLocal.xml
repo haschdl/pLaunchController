@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact build-on-make="true" name="processingLibrariesLocal">
+    <output-path>$PROJECT_DIR$/../../Processing/libraries</output-path>
+    <root id="root">
+      <element id="directory" name="pLaunchControl">
+        <element id="directory" name="library">
+          <element id="file-copy" path="$PROJECT_DIR$/export.txt" />
+          <element id="archive" name="pLaunchControl.jar">
+            <element id="directory" name="META-INF">
+              <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+            </element>
+            <element id="module-output" name="pLaunchController" />
+          </element>
+        </element>
+        <element id="directory" name="examples">
+          <element id="dir-copy" path="$PROJECT_DIR$/examples" />
+        </element>
+        <element id="file-copy" path="$PROJECT_DIR$/library.properties" />
+      </element>
+    </root>
+  </artifact>
+</component>
