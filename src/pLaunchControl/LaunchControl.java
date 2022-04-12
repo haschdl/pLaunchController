@@ -6,6 +6,10 @@ import javax.sound.midi.MidiMessage;
 import javax.sound.midi.MidiSystem;
 import javax.sound.midi.MidiUnavailableException;
 import java.lang.reflect.Method;
+import uk.co.xfactorylibrarians.coremidi4j.CoreMidiDeviceProvider;
+import uk.co.xfactorylibrarians.coremidi4j.CoreMidiNotification;
+import uk.co.xfactorylibrarians.coremidi4j.CoreMidiException;
+
 
 import static processing.core.PApplet.println;
 
@@ -130,14 +134,15 @@ public class LaunchControl implements MidiDevice {
         for (int i = 0, l = PAD_COUNT; i < l; i++) {
             padValues[i] = new Pad(i,parent);
         }
-        infos = MidiSystem.getMidiDeviceInfo();
+        infos = CoreMidiDeviceProvider.getMidiDeviceInfo();
         for (javax.sound.midi.MidiDevice.Info info : infos) {
-            if (info.getName().equals("Launch Control")) {
-                javax.sound.midi.MidiDevice device = MidiSystem.getMidiDevice(info);
-                if (info.getClass().getName().equals("com.sun.media.sound.MidiInDeviceProvider$MidiInDeviceInfo")) {
+            javax.sound.midi.MidiDevice device = MidiSystem.getMidiDevice(info);
+            System.out.println(String.format("Device: %s \t Receivers: %d \t Transmitters: %d", info, device.getMaxReceivers(), device.getMaxTransmitters()));
+            if (info.getName().endsWith("Launch Control")) {
+                if (device.getMaxReceivers() == 0) {
                     deviceIn = device;
                     println("Connected to Launch Control MIDI Input.");
-                } else {
+                } else if(device.getMaxTransmitters()==0) {
                     println("Connected to Launch Control MIDI Output.");
                     deviceOut = device;
                 }
