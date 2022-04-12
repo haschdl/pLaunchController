@@ -1,7 +1,9 @@
 package pLaunchControl;
 
 /**
- * The 8 pads of the controller.
+ * A list of numbers that represent pads on midi devices.
+ * This list is device-agnostic. To use a list that is
+ * limited to a given device, use DevicePad
  */
 public enum PADS {
     /**
@@ -35,10 +37,43 @@ public enum PADS {
     /**
      * The eighth pad from left to right.
      */
-    PAD_8(7);
+    PAD_8(7),
+    /**
+     * The ninth pad from left to right.
+     */
+    PAD_9(8),
+    /**
+     * The tenth pad from left to right.
+     */
+    PAD_10(9),
+    /**
+     * The eleventh pad from left to right.
+     */
+    PAD_11(10),
+    /**
+     * The twelfth pad from left to right.
+     */
+    PAD_12(11),
+    /**
+     * The thirteenth pad from left to right.
+     */
+    PAD_13(12),
+    /**
+     * The fourteenth pad from left to right.
+     */
+    PAD_14(13),
+    /**
+     * The fifteenth pad from left to right.
+     */
+    PAD_15(14),
+    /**
+     * The sixteenth pad from left to right.
+     */
+    PAD_16(15);
 
     private final byte code;
-    protected byte code() { return code; }
+
+    public byte code() { return code; }
 
     PADS(int code)
     {

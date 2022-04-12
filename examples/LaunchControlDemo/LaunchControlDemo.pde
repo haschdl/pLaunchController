@@ -1,4 +1,4 @@
-// Example of the library pLaunchController. This sketch is a good way to test
+// Example of the library pLaunchControl. This sketch is a good way to test
 // the library and see the dynamics of using the controller and its effect on the screen.
 // It illustrates that when the sketch starts, it is not possible to read the actual position of
 // knob - values are updated as soon as you move the knob.
@@ -7,13 +7,13 @@
 
 import pLaunchControl.*;
 
-LaunchController controller;
+LaunchControl controller;
 
         void setup() {
         size(1000, 500);
 
         try {
-        controller = new LaunchController(this, true);
+        controller = new LaunchControl(this, true);
         }
         catch(Exception e) {
         println("Unfortunately we could not detect that Launch Control is connected to this computer :(");

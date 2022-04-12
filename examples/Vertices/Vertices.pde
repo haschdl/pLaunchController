@@ -12,7 +12,7 @@
  
 import pLaunchControl.*;
 
-LaunchController controller;
+LaunchControl controller;
 
 enum Options {
  CYLINDER,
@@ -29,7 +29,7 @@ void setup() {
   size(640, 360, P3D);
   
   try {
-    controller = new LaunchController(this);
+    controller = new LaunchControl(this, true);
     controller.setPadMode(PADMODE.RADIO);
     
     //setting the initial value for the pad; calling setPad(PADS pad,boolean onOff) combine with PADMODE.RADIO will also "turn off" the other pads  
