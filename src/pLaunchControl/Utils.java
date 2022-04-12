@@ -1,4 +1,4 @@
-package pLaunchController;
+package pLaunchControl;
 
 import javax.sound.midi.InvalidMidiDataException;
 import javax.sound.midi.MidiMessage;

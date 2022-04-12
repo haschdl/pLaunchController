@@ -1,4 +1,4 @@
-package pLaunchController;
+package pLaunchControl;
 
 import java.lang.reflect.Field;
 

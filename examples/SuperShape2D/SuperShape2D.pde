@@ -1,4 +1,4 @@
-// Example of the library pLaunchController. In this sketch, the knobs and pads of the Novation Launch Control
+// Example of the library pLaunchControl. In this sketch, the knobs and pads of the Novation Launch Control
 // are used to control the variables of the image being generated.
 // This sketch is almost entirely the SuperShape3D implementation from Daniel Shiffman,
 // with the additions for the MIDI controller.
@@ -9,7 +9,7 @@
 //   http://patreon.com/codingtrain
 //   Code for: https://youtu.be/akM4wMZIBWg
 
-import pLaunchController.*;
+import pLaunchControl.*;
 
 PVector[][] globe;
 int total = 75;

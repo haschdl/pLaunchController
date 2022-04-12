@@ -1,4 +1,4 @@
-package pLaunchController;
+package pLaunchControl;
 
 import javax.sound.midi.MidiDevice;
 import javax.sound.midi.MidiMessage;

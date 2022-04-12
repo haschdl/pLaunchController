@@ -1,4 +1,4 @@
-package pLaunchController;
+package pLaunchControl;
 
 /**
  * Modes of operation of pads.

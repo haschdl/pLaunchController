@@ -1,4 +1,4 @@
-package pLaunchController;
+package pLaunchControl;
 
 /**
  * The 16 knobs of the controller. Knobs from the upper row are named KNOB_x_HIGH, where x goes

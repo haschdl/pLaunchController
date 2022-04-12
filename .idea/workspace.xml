@@ -7,7 +7,60 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79e7d7a1-5c5b-44e1-a6be-83c5765af82f" name="Default" comment="New methods for getting normalized value of the knob. New example. Improved JavaDocs.">
+      <change beforePath="$PROJECT_DIR$/.github/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/.github/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/contributing.md" beforeDir="false" afterPath="$PROJECT_DIR$/.github/contributing.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/LaunchControllerDemo/LaunchControllerDemo.pde" beforeDir="false" afterPath="$PROJECT_DIR$/examples/LaunchControllerDemo/LaunchControllerDemo.pde" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/SuperShape2D/SuperShape2D.pde" beforeDir="false" afterPath="$PROJECT_DIR$/examples/SuperShape2D/SuperShape2D.pde" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/Vertices/Vertices.pde" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Vertices/Vertices.pde" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/export.txt" beforeDir="false" afterPath="$PROJECT_DIR$/export.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/examples/SuperShape2D/SuperShape2D.pde" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/examples/Vertices/Vertices.pde" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/library/export.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/library/pLaunchController.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/allclasses-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/allclasses-noframe.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/constant-values.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/deprecated-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/help-doc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/index-files/index-1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/index-files/index-10.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/index-files/index-11.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/index-files/index-12.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/index-files/index-13.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/index-files/index-14.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/index-files/index-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/index-files/index-3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/index-files/index-4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/index-files/index-5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/index-files/index-6.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/index-files/index-7.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/index-files/index-8.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/index-files/index-9.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/overview-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/pLaunchController/KNOBS.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/pLaunchController/Knob.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/pLaunchController/LaunchController.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/pLaunchController/LaunchControllerReceiver.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/pLaunchController/LedConstants.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/pLaunchController/Messages.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/pLaunchController/PADS.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/pLaunchController/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/pLaunchController/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/pLaunchController/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/package-list" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/reference/stylesheet.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/src/pLaunchController/KNOBS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pLaunchControl/KNOBS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/src/pLaunchController/Knob.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pLaunchControl/Knob.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/src/pLaunchController/LaunchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pLaunchControl/LaunchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/src/pLaunchController/LaunchControllerReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pLaunchControl/LaunchControllerReceiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/src/pLaunchController/LedConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pLaunchControl/LedConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/src/pLaunchController/PADMODE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pLaunchControl/PADMODE.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/pLaunchController/src/pLaunchController/PADS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pLaunchControl/PADS.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/pLaunchController/pLaunchController/KNOBS.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/pLaunchController/pLaunchController/Knob.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/pLaunchController/pLaunchController/LaunchController.class" beforeDir="false" />
@@ -15,6 +68,48 @@
       <change beforePath="$PROJECT_DIR$/out/production/pLaunchController/pLaunchController/LedConstants.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/pLaunchController/pLaunchController/PADMODE.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/pLaunchController/pLaunchController/PADS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pLaunchController.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchController.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference/allclasses-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/allclasses-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference/allclasses-noframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/allclasses-noframe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/constant-values.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/deprecated-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/help-doc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/index-files/index-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/index-files/index-10.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference/index-files/index-11.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/index-files/index-11.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference/index-files/index-12.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/index-files/index-12.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference/index-files/index-13.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/index-files/index-13.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference/index-files/index-14.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/index-files/index-14.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/index-files/index-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/index-files/index-3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/index-files/index-4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/index-files/index-5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/index-files/index-6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/index-files/index-7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/index-files/index-8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/index-files/index-9.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/overview-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference/pLaunchController/KNOBS.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/pLaunchController/KNOBS.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference/pLaunchController/Knob.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/pLaunchController/Knob.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference/pLaunchController/LaunchController.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/pLaunchController/LaunchController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference/pLaunchController/LaunchControllerReceiver.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/pLaunchController/LaunchControllerReceiver.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference/pLaunchController/LedConstants.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/pLaunchController/LedConstants.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference/pLaunchController/Messages.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/pLaunchController/Messages.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference/pLaunchController/PADMODE.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/pLaunchController/PADMODE.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference/pLaunchController/PADS.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/pLaunchController/PADS.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference/pLaunchController/package-frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/pLaunchController/package-frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference/pLaunchController/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/pLaunchController/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference/pLaunchController/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/pLaunchController/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference/package-list" beforeDir="false" afterPath="$PROJECT_DIR$/reference/package-list" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pLaunchController/KNOBS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pLaunchController/Knob.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pLaunchController/LaunchController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pLaunchController/LaunchControllerReceiver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pLaunchController/LedConstants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pLaunchController/PADMODE.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pLaunchController/PADS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pLaunchController/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pLaunchControl/Utils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,6 +283,7 @@
       <recent name="C:\CreativeCoding\Java\pLaunchController\.github" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/examples/LaunchControllerDemo" />
       <recent name="C:\CreativeCoding\Java\pLaunchController\examples" />
     </key>
   </component>
@@ -435,11 +531,11 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/pLaunchController/LaunchControllerReceiver.java</url>
+          <url>file://$PROJECT_DIR$/src/pLaunchControl/LaunchControllerReceiver.java</url>
           <line>31</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/pLaunchController/LaunchController.java</url>
+          <url>file://$PROJECT_DIR$/src/pLaunchControl/LaunchController.java</url>
           <line>61</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
