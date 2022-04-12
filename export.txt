@@ -1,1 +1,1 @@
-application=pLaunchController.jar
+application=pLaunchControl.jar

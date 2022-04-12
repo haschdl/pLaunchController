@@ -1,5 +1,5 @@
 /**
- * Demonstrates pLaunchController by using the pads to switch between three ways of drawing a cylinder-like geometry.
+ * Demonstrates pLaunchControl by using the pads to switch between three ways of drawing a cylinder-like geometry.
  * In this examples, the pads work as "radio-buttons", meaning only one can be activated. Note that this demo uses only pads 1 to 3.
  * 
  * Credits to original code: Processing example "Vertices", by Simon Greenwold.
@@ -10,9 +10,9 @@
  *  number of sides drawn is variable.
  */
  
-import pLaunchController.*;
+import pLaunchControl.*;
 
-LaunchController controller;
+LaunchControl controller;
 
 enum Options {
  CYLINDER,
@@ -29,7 +29,7 @@ void setup() {
   size(640, 360, P3D);
   
   try {
-    controller = new LaunchController(this);
+    controller = new LaunchControl(this, true);
     controller.setPadMode(PADMODE.RADIO);
     
     //setting the initial value for the pad; calling setPad(PADS pad,boolean onOff) combine with PADMODE.RADIO will also "turn off" the other pads  

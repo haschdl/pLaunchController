@@ -1,4 +1,4 @@
-// Example of the library pLaunchController. In this sketch, the knobs and pads of the Novation Launch Control
+// Example of the library pLaunchControl. In this sketch, the knobs and pads of the Novation Launch Control
 // are used to control the variables of the image being generated.
 // This sketch is almost entirely the SuperShape3D implementation from Daniel Shiffman,
 // with the additions for the MIDI controller.
@@ -9,7 +9,7 @@
 //   http://patreon.com/codingtrain
 //   Code for: https://youtu.be/akM4wMZIBWg
 
-import pLaunchController.*;
+import pLaunchControl.*;
 
 PVector[][] globe;
 int total = 75;
@@ -19,7 +19,7 @@ float offset = 0;
 float m, mchange, r;
 float lat_start, lat_end;
 float lon_start, lon_end;
-LaunchController controller;
+LaunchControl controller;
 
 void setup() {
   size(800, 800, P3D);
@@ -27,15 +27,15 @@ void setup() {
   globe = new PVector[total+1][total+1];
 
   try {
-    controller = new LaunchController(this);
+    controller = new LaunchControl(this);
 
     //attaching knobs to variables
-    controller.getKnob(KNOBS.KNOB_1_HIGH).range(100,500).defaultValue(200).variable("r");
-    controller.getKnob(KNOBS.KNOB_2_HIGH).range(0,100).defaultValue(10).variable("m");
-    controller.getKnob(KNOBS.KNOB_3_HIGH).range(-HALF_PI,0).defaultValue(-HALF_PI).variable("lat_start");
-    controller.getKnob(KNOBS.KNOB_4_HIGH).range(0,HALF_PI).defaultValue(HALF_PI).variable("lat_end");
-    controller.getKnob(KNOBS.KNOB_5_HIGH).range(-PI,0).defaultValue(-PI).variable("lon_start");
-    controller.getKnob(KNOBS.KNOB_6_HIGH).range(0,PI).defaultValue(PI).variable("lon_end");
+    controller.getKnob(KNOBS.KNOB_1_HIGH).range(100, 500).defaultValue(200).variable("r");
+    controller.getKnob(KNOBS.KNOB_2_HIGH).range(0, 100).defaultValue(10).variable("m");
+    controller.getKnob(KNOBS.KNOB_3_HIGH).range(-HALF_PI, 0).defaultValue(-HALF_PI).variable("lat_start");
+    controller.getKnob(KNOBS.KNOB_4_HIGH).range(0, HALF_PI).defaultValue(HALF_PI).variable("lat_end");
+    controller.getKnob(KNOBS.KNOB_5_HIGH).range(-PI, 0).defaultValue(-PI).variable("lon_start");
+    controller.getKnob(KNOBS.KNOB_6_HIGH).range(0, PI).defaultValue(PI).variable("lon_end");
   }
   catch(Exception e) {
     println("Unfortunately we could not detect that Launch Control is connected to this computer :(");
@@ -85,7 +85,7 @@ void draw() {
   offset += 5;
   for (int i = 0; i < total; i++) {
     float hu = map(i, 0, total, 0, 255*6);
-    fill((hu + offset) % 255 , 255, 255);
+    fill((hu + offset) % 255, 255, 255);
     beginShape(TRIANGLE_STRIP);
     for (int j = 0; j < total+1; j++) {
       PVector v1 = globe[i][j];
@@ -112,20 +112,19 @@ void launchControllerPadChanged(PADS pad) {
   //you can get the knob status as boolean or int (0 or 1)
   //Using int might be useful in calculations, for example,
   //you can "turn off" noise by multiplying by 0 or 1.
-  boolean myBooleanVariable = controller.getPad(pad);
+  boolean myBooleanVariable = controller.getPad(pad).value();
   int myIntVariable = controller.getPadInt(pad);
 }
 
 
 void launchControllerKnobChanged(KNOBS knob) {
-    //Printing the knob name and value, for demonstration purposes only
-  println(String.format("Launch Control knob changed: %s  Value: %.1f" ,knob.name(), 1.0));
+  //Printing the knob name and value, for demonstration purposes only
+  println(String.format("Launch Control knob changed: %s  Value: %.1f", knob.name(), 1.0));
 
   /*
   In addition to using the method in setup(), you can
-  also using this event to do something when the knob changed.
-  Example:
-  r = controller.getKnob(KNOBS.KNOB_1_HIGH).value();
+   also using this event to do something when the knob changed.
+   Example:
+   r = controller.getKnob(KNOBS.KNOB_1_HIGH).value();
    */
-
 }
