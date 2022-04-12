@@ -145,7 +145,7 @@ public class Knob {
         try {
             return parent.getClass().getDeclaredField(fieldName);
         } catch (Exception e) {
-            throw new IllegalArgumentException("LaunchController Error: variable not found in the sketch: " + fieldName + ".");
+            throw new IllegalArgumentException("LaunchControl Error: variable not found in the sketch: " + fieldName + ".");
         }
 
     }
@@ -162,13 +162,13 @@ public class Knob {
             field.setFloat(parent, value);
         }
         catch (IllegalAccessException e) {
-            System.err.println(String.format("LaunchController Error: It was not possible to set the value of the variable %s. Error message: %s", fieldName, e.getMessage()));
+            System.err.println(String.format("LaunchControl Error: It was not possible to set the value of the variable %s. Error message: %s", fieldName, e.getMessage()));
         }
 
     }
 
     /**
-     * Attachs the knob value to a variable. The variable name must match a float variable
+     * Attaches the knob value to a variable. The variable name must match a float variable
      * in your sketch. Currently
      * @param variable
      * @return
@@ -178,6 +178,11 @@ public class Knob {
         setFloatField(parent_object, variable, value());
         return this;
     }
+
+    public String getVariable() {
+        return this.variable;
+    }
+
 
     public Knob plugTo(Object parent_object) {
         this.parent_object = parent_object;

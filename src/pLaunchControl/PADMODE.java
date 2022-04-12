@@ -9,7 +9,7 @@ public enum PADMODE {
      * Pad works like a on/off switch. The state of the pad is persisted, and pad is lit
      * until a second push. Several pads can be turned on at the same time.
      * This is the default mode. Note: the state of each pad is available from
-     * {@link LaunchController#getPad(PADS)}.
+     * {@link LaunchControl#getPad(PADS)}.
      */
     TOGGLE,
     /**
