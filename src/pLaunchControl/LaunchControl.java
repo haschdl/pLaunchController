@@ -7,6 +7,11 @@ import javax.sound.midi.MidiSystem;
 import javax.sound.midi.MidiUnavailableException;
 import java.lang.reflect.Method;
 
+import uk.co.xfactorylibrarians.coremidi4j.CoreMidiDeviceProvider;
+import uk.co.xfactorylibrarians.coremidi4j.CoreMidiNotification;
+import uk.co.xfactorylibrarians.coremidi4j.CoreMidiException;
+
+
 import static processing.core.PApplet.println;
 
 /***
@@ -37,6 +42,7 @@ import static processing.core.PApplet.println;
  *
  */
 public class LaunchControl implements MidiDevice {
+    public static final String DEVICE_NAME_SUFFIX = "Launch Control";
     Method controllerChangedEventMethod, knobChangedEventMethod, padChangedEventMethod;
     private static final String controlChangedEventName = "LaunchControlChanged";
     private static final String knobChangedEventName = "LaunchControlKnobChanged";
@@ -76,7 +82,7 @@ public class LaunchControl implements MidiDevice {
     public Knob getKnob(int knobIndex) {
         //TODO validate knobIndex
         KNOBS knobAtPosition = KNOBS.values()[knobIndex];
-        return  knobValues[knobAtPosition.code()];
+        return knobValues[knobAtPosition.code()];
     }
 
 
@@ -118,34 +124,46 @@ public class LaunchControl implements MidiDevice {
         throw new UnsupportedOperationException("Method not available. This device does not have sliders.");
     }
 
-    public LaunchControl(PApplet parent) throws MidiUnavailableException {
-        this(parent, false);
-    }
+
     public LaunchControl(PApplet parent, boolean debug) throws MidiUnavailableException {
+        this(parent, debug, null);
+    }
+
+    public LaunchControl(PApplet parent) throws MidiUnavailableException {
+        this(parent, false, null);
+    }
+
+
+    public LaunchControl(PApplet parent, boolean debug, String deviceName) throws MidiUnavailableException {
         this.parent = parent;
-        this.debug=debug;
+        this.debug = debug;
         for (int i = 0, l = KNOB_COUNT; i < l; i++) {
             knobValues[i] = new Knob(i, parent);
         }
         for (int i = 0, l = PAD_COUNT; i < l; i++) {
-            padValues[i] = new Pad(i,parent);
+            padValues[i] = new Pad(i, parent);
         }
-        infos = MidiSystem.getMidiDeviceInfo();
+        infos = CoreMidiDeviceProvider.getMidiDeviceInfo();
         for (javax.sound.midi.MidiDevice.Info info : infos) {
-            if (info.getName().equals("Launch Control")) {
-                javax.sound.midi.MidiDevice device = MidiSystem.getMidiDevice(info);
-                if (info.getClass().getName().equals("com.sun.media.sound.MidiInDeviceProvider$MidiInDeviceInfo")) {
+            javax.sound.midi.MidiDevice device = MidiSystem.getMidiDevice(info);
+            if (this.debug)
+                System.out.println(String.format("Device: %s \t Receivers: %d \t Transmitters: %d", info, device.getMaxReceivers(), device.getMaxTransmitters()));
+            if ((deviceName != null && info.getName().endsWith(deviceName)) || info.getName().endsWith(DEVICE_NAME_SUFFIX)) {
+                if (device.getMaxReceivers() == 0) {
                     deviceIn = device;
-                    println("Connected to Launch Control MIDI Input.");
-                } else {
-                    println("Connected to Launch Control MIDI Output.");
+                    println("Connected to MIDI Input.");
+                } else if (device.getMaxTransmitters() == 0) {
+                    println("Connected to MIDI Output.");
                     deviceOut = device;
                 }
             }
         }
 
         if (deviceIn == null) {
-            println("Launch Control not connected!");
+            if (deviceName == null)
+                System.out.printf("A device with name ending with %s was not detected.\n", DEVICE_NAME_SUFFIX);
+            else
+                System.out.printf("A device with name you provided was not detected.\nCheck the device name: %s \n", deviceName);
             return;
         }
 
@@ -216,7 +234,7 @@ public class LaunchControl implements MidiDevice {
     public Pad getPad(int padIndex) {
         //TODO validate padIndex
         PADS padAtPosition = PADS.values()[padIndex];
-        return  padValues[padAtPosition.code()];
+        return padValues[padAtPosition.code()];
     }
 
 
@@ -239,7 +257,7 @@ public class LaunchControl implements MidiDevice {
         if (padValues[pad.code()].value() != value) {
             padValues[pad.code()].value(value);
             receiver.sendLedOnOff(value, pad);
-            if(!disableEvents) {
+            if (!disableEvents) {
                 midiLaunchControlChanged();
                 padChanged(pad);
             }

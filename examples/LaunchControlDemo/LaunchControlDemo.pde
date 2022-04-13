@@ -9,83 +9,87 @@ import pLaunchControl.*;
 
 LaunchControl controller;
 
-        void setup() {
-        size(1000, 500);
+void setup() {
+  size(1000, 500);
 
-        try {
-        controller = new LaunchControl(this, true);
-        }
-        catch(Exception e) {
-        println("Unfortunately we could not detect that Launch Control is connected to this computer :(");
-        }
-        textAlign(CENTER);
-        }
+  try {
+    controller = new LaunchControl(this, true);
+    // If you have renamed your Launch Control in the system
+    // preferences, use this version of the constructor:
+    // controller = new LaunchControl(this, true, "THE NAME YOU GAVE TO THE CONTROLLER");
+  }
+  catch(Exception e) {
+    println("Unfortunately we could not detect that Launch Control is connected to this computer :(");
+    println(e);
+    noLoop();
+  }
+  textAlign(CENTER);
+}
 
 
-        void draw() {
-        background(0);
-        translate(20, 20);
-        stroke(255);
-        strokeWeight(3);
-        float s = width/16;
-        translate(s/2, s);
-
-        drawKnobs(s);
-        drawPads(s);
-
-        }
+void draw() {
+  background(0);
+  translate(20, 20);
+  stroke(255);
+  strokeWeight(3);
+  float s = width/16;
+  translate(s/2, s);
+  if (controller !=null) {
+    drawKnobs(s);
+    drawPads(s);
+  }
+}
 
 /**
  * Draws the knobs of the controller as simple arcs.
  */
-        void drawKnobs(float s) {
+void drawKnobs(float s) {
 
-        //drawing positions
-        float start = HALF_PI * 1.3;
-        float end = TWO_PI + HALF_PI * .7;
+  //drawing positions
+  float start = HALF_PI * 1.3;
+  float end = TWO_PI + HALF_PI * .7;
 
-        pushMatrix();
-        for (int i = 0; i < 16; i++) {
-        //draw knob background, simple arc
-        fill(255);
-        arc(2*s*(i%8), 0, s, s, start, end);
+  pushMatrix();
+  for (int i = 0; i < 16; i++) {
+    //draw knob background, simple arc
+    fill(255);
+    arc(2*s*(i%8), 0, s, s, start, end);
 
-        //draw knob position
-        fill(80);
-        Knob knob = controller.getKnob(i);
-        float normal = knob.valueNormal();
-        float realValue = knob.value();
+    //draw knob position
+    fill(80);
+    Knob knob = controller.getKnob(i);
+    float normal = knob.valueNormal();
+    float realValue = knob.value();
 
-        arc(2*s*(i%8), 0, s, s, start, start + normal*(end-start));
-        fill(255);
-        text(round(realValue), 2*s*(i%8), s );
+    arc(2*s*(i%8), 0, s, s, start, start + normal*(end-start));
+    fill(255);
+    text(round(realValue), 2*s*(i%8), s );
 
-        if (i == 7)
-        translate(0, height * .3);
-        }
-        popMatrix();
-        }
+    if (i == 7)
+      translate(0, height * .3);
+  }
+  popMatrix();
+}
 
 /**
  * Draws the pads of the controller as simple arcs.
  */
-        void drawPads(float s) {
-        translate(0,height * .6);
-        rectMode(CENTER);
+void drawPads(float s) {
+  translate(0, height * .6);
+  rectMode(CENTER);
 
-        for (int i = 0; i < 8; i++) {
-        //draw pad background, simple arc
-        fill(255);
-        rect(2*s*i,0,s,s);
+  for (int i = 0; i < 8; i++) {
+    //draw pad background, simple arc
+    fill(255);
+    rect(2*s*i, 0, s, s);
 
-        //draw pad state position
-        fill(80);
-        boolean padState = controller.getPad(i).value();
-        if(padState)
-        rect(2*s*i,0,s,s);
+    //draw pad state position
+    fill(80);
+    boolean padState = controller.getPad(i).value();
+    if (padState)
+      rect(2*s*i, 0, s, s);
 
-        fill(255);
-        text(round(i), 2*s*(i%8), s );
-
-        }
-        }
+    fill(255);
+    text(round(i), 2*s*(i%8), s );
+  }
+}
