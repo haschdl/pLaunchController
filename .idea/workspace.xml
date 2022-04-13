@@ -6,12 +6,15 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79e7d7a1-5c5b-44e1-a6be-83c5765af82f" name="Default" comment="Udpated references to pLaunchControl and small change to artefact creation">
+    <list default="true" id="79e7d7a1-5c5b-44e1-a6be-83c5765af82f" name="Default" comment="Introduces the dependency to coremidi4j, which also fixes the Sysex messages (related to #8). This commit fixes LaunchControl implementation only (a few remaining changes to LaunchControlXL are needed).">
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/processingLibrariesLocal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/processingLibrariesLocal.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/LaunchControlDemo/LaunchControlDemo.pde" beforeDir="false" afterPath="$PROJECT_DIR$/examples/LaunchControlDemo/LaunchControlDemo.pde" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library.properties" beforeDir="false" afterPath="$PROJECT_DIR$/library.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pLaunchController.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchController.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pLaunchController.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchController.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pLaunchControl/LaunchControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pLaunchControl/LaunchControl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pLaunchControl/LaunchControlDeviceReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pLaunchControl/LaunchControlDeviceReceiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pLaunchControl/LaunchControlXL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pLaunchControl/LaunchControlXL.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,6 +213,8 @@
       <recent name="C:\CreativeCoding\Java\pLaunchController\.github" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/" />
+      <recent name="$PROJECT_DIR$/resources" />
       <recent name="$PROJECT_DIR$/examples/LaunchControllerDemo" />
       <recent name="C:\CreativeCoding\Java\pLaunchController\examples" />
     </key>
@@ -416,7 +421,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649771327186</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Introduces the dependency to coremidi4j, which also fixes the Sysex messages. This commit fixes LaunchControl implementation only (a few remaining changes to LaunchControlXL are needed).">
+      <created>1649776928780</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1649776928780</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -457,7 +469,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="launchControlXL" />
+                        <option value="fix-sysexmessage" />
                       </list>
                     </value>
                   </entry>
@@ -486,7 +498,8 @@
     <MESSAGE value="Initial renaming from pLaunchController to pLaunchControl. It does not include updates to documentation.&#10;Relates to #6" />
     <MESSAGE value="Implementation of LaunchControlXL.java and the required refactoring related to it. This change introduces issue #7" />
     <MESSAGE value="Udpated references to pLaunchControl and small change to artefact creation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Udpated references to pLaunchControl and small change to artefact creation" />
+    <MESSAGE value="Introduces the dependency to coremidi4j, which also fixes the Sysex messages. This commit fixes LaunchControl implementation only (a few remaining changes to LaunchControlXL are needed)." />
+    <option name="LAST_COMMIT_MESSAGE" value="Introduces the dependency to coremidi4j, which also fixes the Sysex messages. This commit fixes LaunchControl implementation only (a few remaining changes to LaunchControlXL are needed)." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -497,7 +510,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/pLaunchControl/LaunchControl.java</url>
-          <line>61</line>
+          <line>63</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>

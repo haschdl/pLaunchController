@@ -217,7 +217,7 @@
       <zipfileset dir="${basedir}/src" prefix="pLaunchController/src"/>
       <zipfileset file="${basedir}/export.txt" prefix="pLaunchController/library"/>
       <zipfileset file="${temp.jar.path.pLaunchController.jar2}" prefix="pLaunchController/library"/>
-      <zipfileset dir="${basedir}/examples" prefix="pLaunchController/examples"/>
+      <zipfileset dir="/resources/examples" prefix="pLaunchController/examples"/>
       <zipfileset file="${basedir}/library.properties" prefix="pLaunchController"/>
     </zip>
     <mkdir dir="${artifact.output.processinglib}/pLaunchController"/>
@@ -226,7 +226,7 @@
     <copy file="${temp.jar.path.pLaunchController.jar}" tofile="${artifact.output.processinglib}/pLaunchController/library/pLaunchController.jar"/>
     <mkdir dir="${artifact.output.processinglib}/pLaunchController/examples"/>
     <copy todir="${artifact.output.processinglib}/pLaunchController/examples">
-      <fileset dir="${basedir}/examples"/>
+      <fileset dir="/resources/examples"/>
     </copy>
     <mkdir dir="${artifact.output.processinglib}/pLaunchController/src"/>
     <copy todir="${artifact.output.processinglib}/pLaunchController/src">

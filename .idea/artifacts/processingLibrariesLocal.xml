@@ -4,7 +4,6 @@
     <root id="root">
       <element id="directory" name="pLaunchControl">
         <element id="directory" name="library">
-          <element id="file-copy" path="$PROJECT_DIR$/export.txt" />
           <element id="archive" name="pLaunchControl.jar">
             <element id="directory" name="META-INF">
               <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
@@ -12,6 +11,27 @@
             <element id="module-output" name="pLaunchController" />
           </element>
           <element id="library" level="project" name="uk.co.xfactory.librarians.coremidi4j" />
+        </element>
+        <element id="directory" name="examples">
+          <element id="dir-copy" path="$PROJECT_DIR$/examples" />
+        </element>
+        <element id="file-copy" path="$PROJECT_DIR$/library.properties" />
+      </element>
+      <element id="archive" name="pLaunchControl.zip">
+        <element id="directory" name="src">
+          <element id="module-source" name="pLaunchController" />
+        </element>
+        <element id="directory" name="library">
+          <element id="archive" name="pLaunchControl.jar">
+            <element id="module-output" name="pLaunchController" />
+            <element id="directory" name="META-INF">
+              <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+            </element>
+          </element>
+          <element id="library" level="project" name="uk.co.xfactory.librarians.coremidi4j" />
+        </element>
+        <element id="directory" name="reference">
+          <element id="dir-copy" path="$PROJECT_DIR$/reference" />
         </element>
         <element id="directory" name="examples">
           <element id="dir-copy" path="$PROJECT_DIR$/examples" />
