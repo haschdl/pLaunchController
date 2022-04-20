@@ -2,8 +2,10 @@ package pLaunchControl;
 
 
 /**
- * The 8 sliders of the controller. Sliders are named SLIDER_x,
- * where x goes from 1 to 8.
+ * A list of numbers that represent sliders on midi devices.
+ * This list is device-agnostic. To use a list that is
+ * limited to a given device, use an implementation of
+ * {@link pLaunchControl.midi.MidiDevice}
  */
 public enum SLIDERS {
 

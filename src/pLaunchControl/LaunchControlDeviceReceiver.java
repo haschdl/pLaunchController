@@ -1,6 +1,7 @@
 package pLaunchControl;
 
-import javax.naming.OperationNotSupportedException;
+import pLaunchControl.midi.MidiDevice;
+
 import javax.sound.midi.MidiMessage;
 import uk.co.xfactorylibrarians.coremidi4j.CoreMidiReceiver;
 

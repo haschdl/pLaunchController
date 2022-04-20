@@ -1,5 +1,6 @@
 package pLaunchControl;
 
+import pLaunchControl.midi.MidiDevice;
 import processing.core.PApplet;
 
 import javax.sound.midi.MidiMessage;
@@ -8,9 +9,6 @@ import javax.sound.midi.MidiUnavailableException;
 import java.lang.reflect.Method;
 
 import uk.co.xfactorylibrarians.coremidi4j.CoreMidiDeviceProvider;
-import uk.co.xfactorylibrarians.coremidi4j.CoreMidiNotification;
-import uk.co.xfactorylibrarians.coremidi4j.CoreMidiException;
-
 
 import static processing.core.PApplet.println;
 
@@ -51,21 +49,21 @@ public class LaunchControl implements MidiDevice {
 
     private static final int KNOB_COUNT = 16;
     private static final int PAD_COUNT = 8;
-    private Knob[] knobValues = new Knob[KNOB_COUNT];
-    private Pad[] padValues = new Pad[PAD_COUNT];
+    private final Knob[] knobValues = new Knob[KNOB_COUNT];
+    private final Pad[] padValues = new Pad[PAD_COUNT];
 
     javax.sound.midi.MidiDevice deviceIn;
     javax.sound.midi.MidiDevice deviceOut;
-    javax.sound.midi.MidiDevice.Info[] infos = null;
+    javax.sound.midi.MidiDevice.Info[] infoList;
     LaunchControlDeviceReceiver receiver;
 
-    public boolean debug = false;
+    public boolean debug;
 
     PApplet parent;
 
     /***
      * Returns the {@link Knob} object for one of the knobs in the controller.
-     * @param knob
+     * @param knob The knob reference to locate.
      * @return A {@link Knob} object corresponding to the physical knob.
      */
     public Knob getKnob(KNOBS knob) {
@@ -137,17 +135,17 @@ public class LaunchControl implements MidiDevice {
     public LaunchControl(PApplet parent, boolean debug, String deviceName) throws MidiUnavailableException {
         this.parent = parent;
         this.debug = debug;
-        for (int i = 0, l = KNOB_COUNT; i < l; i++) {
+        for (int i = 0; i < KNOB_COUNT; i++) {
             knobValues[i] = new Knob(i, parent);
         }
-        for (int i = 0, l = PAD_COUNT; i < l; i++) {
+        for (int i = 0; i < PAD_COUNT; i++) {
             padValues[i] = new Pad(i, parent);
         }
-        infos = CoreMidiDeviceProvider.getMidiDeviceInfo();
-        for (javax.sound.midi.MidiDevice.Info info : infos) {
+        infoList = CoreMidiDeviceProvider.getMidiDeviceInfo();
+        for (javax.sound.midi.MidiDevice.Info info : infoList) {
             javax.sound.midi.MidiDevice device = MidiSystem.getMidiDevice(info);
             if (this.debug)
-                System.out.println(String.format("Device: %s \t Receivers: %d \t Transmitters: %d", info, device.getMaxReceivers(), device.getMaxTransmitters()));
+                System.out.printf("Device: %s \t Receivers: %d \t Transmitters: %d\n", info, device.getMaxReceivers(), device.getMaxTransmitters());
             if ((deviceName != null && info.getName().endsWith(deviceName)) || info.getName().endsWith(DEVICE_NAME_SUFFIX)) {
                 if (device.getMaxReceivers() == 0) {
                     deviceIn = device;
@@ -171,21 +169,21 @@ public class LaunchControl implements MidiDevice {
             controllerChangedEventMethod =
                     parent.getClass().getMethod(controlChangedEventName);
         } catch (Exception e) {
-            // no such method, or an error.. which is fine, just ignore
+            // no such method, or an error, which is fine, just ignore
         }
 
         try {
             knobChangedEventMethod =
                     parent.getClass().getMethod(knobChangedEventName, KNOBS.class);
         } catch (Exception e) {
-            // no such method, or an error.. which is fine, just ignore
+            // no such method, or an error, which is fine, just ignore
         }
 
         try {
             padChangedEventMethod =
                     parent.getClass().getMethod(padChangedEventName, PADS.class);
         } catch (Exception e) {
-            // no such method, or an error.. which is fine, just ignore
+            // no such method, or an error, which is fine, just ignore
         }
 
 
@@ -200,17 +198,29 @@ public class LaunchControl implements MidiDevice {
         println("Resetting the controller...");
         deviceOut.getReceiver().send(Utils.getResetMessage(), -1);
         println("Setting to factory template...");
-        deviceOut.getReceiver().send(Utils.getSetTemplateMessage(), 10);
+        deviceOut.getReceiver().send(Utils.getSetTemplateMessage(), -1);
 
 
         setPadMode(PADMODE.TOGGLE);
         println("LaunchControl ready!");
     }
 
+    private void sendMidiMessage(MidiMessage message) {
+        try {
+            deviceOut.getReceiver().send(message, -1);
+        } catch (MidiUnavailableException e) {
+            println("An error occurred while sending a message to the MIDI device.");
+        }
+    }
+
+    public void turnOnFlashing() {
+        MidiMessage turnOnFlashing = Utils.getTurnOnFlashing(0x08);
+        sendMidiMessage(turnOnFlashing);
+    }
 
     /***
      * The status of a given {@link PADS} as a boolean value.
-     * Alternative, you can get the status of a pad a int value with {@link LaunchControl#getPadInt(PADS)}
+     * Alternative, you can get the status of a pad as int value with {@link LaunchControl#getPadInt(PADS)}
      * @param pad The pad to check.
      * @return True if the pad is "on", False otherwise.
      */
@@ -268,7 +278,7 @@ public class LaunchControl implements MidiDevice {
     /**
      * Inverts the value and turns the given pad on and off.
      *
-     * @param pad
+     * @param pad The reference to a pad.
      */
     @Override
     public void invertPad(PADS pad) {
@@ -336,7 +346,7 @@ public class LaunchControl implements MidiDevice {
     }
 
     /***
-     * Clean-up operations executed when when
+     * Clean-up operations executed when
      * the parent sketch shuts down.
      */
     public void close() {
@@ -377,55 +387,54 @@ public class LaunchControl implements MidiDevice {
         byte[] lastMessage = message.getMessage();
         switch (lastMessage[1]) {
             case 21:
-                setKnobPosition(KNOBS.KNOB_1_HIGH, lastMessage[2]);
+                setKnobPosition(KNOBS.KNOB_01, lastMessage[2]);
                 break;
             case 22:
-                setKnobPosition(KNOBS.KNOB_2_HIGH, lastMessage[2]);
+                setKnobPosition(KNOBS.KNOB_02, lastMessage[2]);
                 break;
             case 23:
-                setKnobPosition(KNOBS.KNOB_3_HIGH, lastMessage[2]);
+                setKnobPosition(KNOBS.KNOB_03, lastMessage[2]);
                 break;
             case 24:
-                setKnobPosition(KNOBS.KNOB_4_HIGH, lastMessage[2]);
+                setKnobPosition(KNOBS.KNOB_04, lastMessage[2]);
                 break;
             case 25:
-                setKnobPosition(KNOBS.KNOB_5_HIGH, lastMessage[2]);
+                setKnobPosition(KNOBS.KNOB_05, lastMessage[2]);
                 break;
             case 26:
-                setKnobPosition(KNOBS.KNOB_6_HIGH, lastMessage[2]);
+                setKnobPosition(KNOBS.KNOB_06, lastMessage[2]);
                 break;
             case 27:
-                setKnobPosition(KNOBS.KNOB_7_HIGH, lastMessage[2]);
+                setKnobPosition(KNOBS.KNOB_07, lastMessage[2]);
                 break;
             case 28:
-                setKnobPosition(KNOBS.KNOB_8_HIGH, lastMessage[2]);
+                setKnobPosition(KNOBS.KNOB_08, lastMessage[2]);
                 break;
             case 41:
-                setKnobPosition(KNOBS.KNOB_1_MED, lastMessage[2]);
+                setKnobPosition(KNOBS.KNOB_09, lastMessage[2]);
                 break;
             case 42:
-                setKnobPosition(KNOBS.KNOB_2_MED, lastMessage[2]);
+                setKnobPosition(KNOBS.KNOB_10, lastMessage[2]);
                 break;
             case 43:
-                setKnobPosition(KNOBS.KNOB_3_MED, lastMessage[2]);
+                setKnobPosition(KNOBS.KNOB_11, lastMessage[2]);
                 break;
             case 44:
-                setKnobPosition(KNOBS.KNOB_4_MED, lastMessage[2]);
+                setKnobPosition(KNOBS.KNOB_12, lastMessage[2]);
                 break;
             case 45:
-                setKnobPosition(KNOBS.KNOB_5_MED, lastMessage[2]);
+                setKnobPosition(KNOBS.KNOB_13, lastMessage[2]);
                 break;
             case 46:
-                setKnobPosition(KNOBS.KNOB_6_MED, lastMessage[2]);
+                setKnobPosition(KNOBS.KNOB_14, lastMessage[2]);
                 break;
             case 47:
-                setKnobPosition(KNOBS.KNOB_7_MED, lastMessage[2]);
+                setKnobPosition(KNOBS.KNOB_15, lastMessage[2]);
                 break;
             case 48:
-                setKnobPosition(KNOBS.KNOB_8_MED, lastMessage[2]);
+                setKnobPosition(KNOBS.KNOB_16, lastMessage[2]);
                 break;
         }
-        return;
     }
 
     @Override
