@@ -162,7 +162,7 @@ public class Knob {
             field.setFloat(parent, value);
         }
         catch (IllegalAccessException e) {
-            System.err.println(String.format("LaunchControl Error: It was not possible to set the value of the variable %s. Error message: %s", fieldName, e.getMessage()));
+            System.err.println(String.format("Error: It was not possible to set the value of the variable %s. Error message: %s", fieldName, e.getMessage()));
         }
 
     }

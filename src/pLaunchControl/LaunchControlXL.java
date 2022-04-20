@@ -47,7 +47,7 @@ import static processing.core.PApplet.println;
  * The parameter pad will have the value of which pad was changed.</p>
  */
 
-public class LaunchControlXL implements MidiDevice {
+public class LaunchControlXL implements pLaunchControl.midi.MidiDevice {
 	
     Method controllerChangedEventMethod, knobChangedEventMethod, sliderChangedEventMethod, padChangedEventMethod;
 
@@ -191,76 +191,76 @@ public class LaunchControlXL implements MidiDevice {
         byte[] msgBytes = message.getMessage();
         switch (msgBytes[1]) {
             case 13:
-                setKnobPosition(KNOBS.KNOB_1_HIGH, msgBytes[2]);
+                setKnobPosition(KNOBS.KNOB_01, msgBytes[2]);
                 break;
             case 14:
-                setKnobPosition(KNOBS.KNOB_2_HIGH, msgBytes[2]);
+                setKnobPosition(KNOBS.KNOB_02, msgBytes[2]);
                 break;
             case 15:
-                setKnobPosition(KNOBS.KNOB_3_HIGH, msgBytes[2]);
+                setKnobPosition(KNOBS.KNOB_03, msgBytes[2]);
                 break;
             case 16:
-                setKnobPosition(KNOBS.KNOB_4_HIGH, msgBytes[2]);
+                setKnobPosition(KNOBS.KNOB_04, msgBytes[2]);
                 break;
             case 17:
-                setKnobPosition(KNOBS.KNOB_5_HIGH, msgBytes[2]);
+                setKnobPosition(KNOBS.KNOB_05, msgBytes[2]);
                 break;
             case 18:
-                setKnobPosition(KNOBS.KNOB_6_HIGH, msgBytes[2]);
+                setKnobPosition(KNOBS.KNOB_06, msgBytes[2]);
                 break;
             case 19:
-                setKnobPosition(KNOBS.KNOB_7_HIGH, msgBytes[2]);
+                setKnobPosition(KNOBS.KNOB_07, msgBytes[2]);
                 break;
             case 20:
-                setKnobPosition(KNOBS.KNOB_8_HIGH, msgBytes[2]);
+                setKnobPosition(KNOBS.KNOB_08, msgBytes[2]);
                 break;
             case 29:
-                setKnobPosition(KNOBS.KNOB_1_MED, msgBytes[2]);
+                setKnobPosition(KNOBS.KNOB_09, msgBytes[2]);
                 break;
             case 30:
-                setKnobPosition(KNOBS.KNOB_2_MED, msgBytes[2]);
+                setKnobPosition(KNOBS.KNOB_10, msgBytes[2]);
                 break;
             case 31:
-                setKnobPosition(KNOBS.KNOB_3_MED, msgBytes[2]);
+                setKnobPosition(KNOBS.KNOB_11, msgBytes[2]);
                 break;
             case 32:
-                setKnobPosition(KNOBS.KNOB_4_MED, msgBytes[2]);
+                setKnobPosition(KNOBS.KNOB_12, msgBytes[2]);
                 break;
             case 33:
-                setKnobPosition(KNOBS.KNOB_5_MED, msgBytes[2]);
+                setKnobPosition(KNOBS.KNOB_13, msgBytes[2]);
                 break;
             case 34:
-                setKnobPosition(KNOBS.KNOB_6_MED, msgBytes[2]);
+                setKnobPosition(KNOBS.KNOB_14, msgBytes[2]);
                 break;
             case 35:
-                setKnobPosition(KNOBS.KNOB_7_MED, msgBytes[2]);
+                setKnobPosition(KNOBS.KNOB_15, msgBytes[2]);
                 break;
             case 36:
-                setKnobPosition(KNOBS.KNOB_8_MED, msgBytes[2]);
+                setKnobPosition(KNOBS.KNOB_16, msgBytes[2]);
                 break;
             case 49:
-                setKnobPosition(KNOBS.KNOB_1_LOW, msgBytes[2]);
+                setKnobPosition(KNOBS.KNOB_17, msgBytes[2]);
                 break;
             case 50:
-                setKnobPosition(KNOBS.KNOB_2_LOW, msgBytes[2]);
+                setKnobPosition(KNOBS.KNOB_18, msgBytes[2]);
                 break;
             case 51:
-                setKnobPosition(KNOBS.KNOB_3_LOW, msgBytes[2]);
+                setKnobPosition(KNOBS.KNOB_19, msgBytes[2]);
                 break;
             case 52:
-                setKnobPosition(KNOBS.KNOB_4_LOW, msgBytes[2]);
+                setKnobPosition(KNOBS.KNOB_20, msgBytes[2]);
                 break;
             case 53:
-                setKnobPosition(KNOBS.KNOB_5_LOW, msgBytes[2]);
+                setKnobPosition(KNOBS.KNOB_21, msgBytes[2]);
                 break;
             case 54:
-                setKnobPosition(KNOBS.KNOB_6_LOW, msgBytes[2]);
+                setKnobPosition(KNOBS.KNOB_22, msgBytes[2]);
                 break;
             case 55:
-                setKnobPosition(KNOBS.KNOB_7_LOW, msgBytes[2]);
+                setKnobPosition(KNOBS.KNOB_23, msgBytes[2]);
                 break;
             case 56:
-                setKnobPosition(KNOBS.KNOB_8_LOW, msgBytes[2]);
+                setKnobPosition(KNOBS.KNOB_24, msgBytes[2]);
                 break;
             case 77:
                 setSliderPosition(SLIDERS.SLIDER_1, msgBytes[2]);

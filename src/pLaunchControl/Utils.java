@@ -7,13 +7,30 @@ import javax.sound.midi.SysexMessage;
 
 public class Utils {
 
-    protected static MidiMessage getResetMessage() {
+
+    /**
+     * All LEDs are turned off, and the buffer settings and duty cycle are reset to their default values.
+     * The MIDI channel n defines the template for which this message is intended (00h-07h (0-7) for the 8 user templates,
+     * and 08h-0Fh (8-15) for the 8 factory templates).
+     * @param channel
+     * @return
+     */
+    protected static MidiMessage getResetMessage(int channel) {
         try {
-            ShortMessage reset = new ShortMessage(184, 0, 0);
+            int status = 0xB0 + channel;
+            ShortMessage reset = new ShortMessage(status, 0x00, 0x00);
             return reset;
         } catch (InvalidMidiDataException e) {
             return null;
         }
+    }
+
+    /***
+     * Returns a message used to reset the controller at first factory template.
+     * @return
+     */
+    protected static MidiMessage getResetMessage() {
+        return getResetMessage(0x08);
     }
 
     /***
@@ -34,5 +51,22 @@ public class Utils {
             System.out.println("Error setting the template in the Midi controller. Error: " + e);
         }
         return null;
+    }
+
+    /**
+     * Returns a message that turns all active LEDs to flashing.
+     * @param template
+     * @return
+     */
+    protected static MidiMessage getTurnOnFlashing(int template) {
+        if (template < 0x00 || template > 0xff)
+            throw new IllegalArgumentException("Template must be in the 0x00-0x0F (00h-07h (0-7) for the 8 user templates, and 08h-0Fh (8-15) for the 8 factory templates.");
+        try {
+            int status = 0xB0 + template;
+            ShortMessage turnFlashingLEDsOn = new ShortMessage(status, 0x00, 0x28);
+            return turnFlashingLEDsOn;
+        } catch (InvalidMidiDataException e) {
+            return null;
+        }
     }
 }

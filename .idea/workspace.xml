@@ -6,15 +6,22 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79e7d7a1-5c5b-44e1-a6be-83c5765af82f" name="Default" comment="Introduces the dependency to coremidi4j, which also fixes the Sysex messages (related to #8). This commit fixes LaunchControl implementation only (a few remaining changes to LaunchControlXL are needed).">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/processingLibrariesLocal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/processingLibrariesLocal.xml" afterDir="false" />
+    <list default="true" id="79e7d7a1-5c5b-44e1-a6be-83c5765af82f" name="Default" comment="Adding new constructors to accept a custom name for the device. Fixes #10">
+      <change afterPath="$PROJECT_DIR$/.github/troubleshooting.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/.github/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/pLaunchController.gif" beforeDir="false" afterPath="$PROJECT_DIR$/.github/pLaunchControl.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/LaunchControlDemo/LaunchControlDemo.pde" beforeDir="false" afterPath="$PROJECT_DIR$/examples/LaunchControlDemo/LaunchControlDemo.pde" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library.properties" beforeDir="false" afterPath="$PROJECT_DIR$/library.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pLaunchController.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchController.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pLaunchController.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchController.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/LaunchControlXLDemo/LaunchControlXLDemo.pde" beforeDir="false" afterPath="$PROJECT_DIR$/examples/LaunchControlXLDemo/LaunchControlXLDemo.pde" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pLaunchControl/KNOBS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pLaunchControl/KNOBS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pLaunchControl/Knob.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pLaunchControl/Knob.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pLaunchControl/LaunchControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pLaunchControl/LaunchControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pLaunchControl/LaunchControlDeviceReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pLaunchControl/LaunchControlDeviceReceiver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pLaunchControl/LaunchControlXL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pLaunchControl/LaunchControlXL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pLaunchControl/LedConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pLaunchControl/LedConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pLaunchControl/MidiDevice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pLaunchControl/midi/MidiDevice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pLaunchControl/PADS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pLaunchControl/PADS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pLaunchControl/SLIDERS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pLaunchControl/SLIDERS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pLaunchControl/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pLaunchControl/Utils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -510,7 +517,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/pLaunchControl/LaunchControl.java</url>
-          <line>63</line>
+          <line>60</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
