@@ -1,12 +1,6 @@
 package pLaunchControl.midi;
 
-import pLaunchControl.Knob;
-import pLaunchControl.PADMODE;
-import pLaunchControl.Pad;
-import pLaunchControl.Slider;
-import pLaunchControl.KNOBS;
-import pLaunchControl.PADS;
-import pLaunchControl.SLIDERS;
+import pLaunchControl.*;
 
 import javax.sound.midi.MidiMessage;
 

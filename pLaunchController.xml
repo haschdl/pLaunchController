@@ -167,7 +167,7 @@
     </javac>
     
     <copy todir="${plaunchcontroller.output.dir}">
-      <fileset dir="${module.plaunchcontroller.basedir}/src">
+      <fileset dir="/">
         <patternset refid="compiler.resources"/>
         <type type="file"/>
       </fileset>
@@ -214,7 +214,7 @@
     </jar>
     <zip destfile="${temp.jar.path.pLaunchController.zip}">
       <zipfileset dir="${basedir}/reference" prefix="pLaunchController/reference"/>
-      <zipfileset dir="${basedir}/src" prefix="pLaunchController/src"/>
+      <zipfileset dir="/" prefix="pLaunchController/src"/>
       <zipfileset file="${basedir}/export.txt" prefix="pLaunchController/library"/>
       <zipfileset file="${temp.jar.path.pLaunchController.jar2}" prefix="pLaunchController/library"/>
       <zipfileset dir="/resources/examples" prefix="pLaunchController/examples"/>
@@ -230,7 +230,7 @@
     </copy>
     <mkdir dir="${artifact.output.processinglib}/pLaunchController/src"/>
     <copy todir="${artifact.output.processinglib}/pLaunchController/src">
-      <fileset dir="${basedir}/src"/>
+      <fileset dir="/"/>
     </copy>
     <mkdir dir="${artifact.output.processinglib}/pLaunchController/reference"/>
     <copy todir="${artifact.output.processinglib}/pLaunchController/reference">

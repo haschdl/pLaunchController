@@ -8,7 +8,7 @@
             <element id="directory" name="META-INF">
               <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
             </element>
-            <element id="module-output" name="pLaunchController" />
+            <element id="module-output" name="pLaunchControl" />
           </element>
           <element id="library" level="project" name="uk.co.xfactory.librarians.coremidi4j" />
         </element>
@@ -18,25 +18,27 @@
         <element id="file-copy" path="$PROJECT_DIR$/library.properties" />
       </element>
       <element id="archive" name="pLaunchControl.zip">
-        <element id="directory" name="src">
-          <element id="module-source" name="pLaunchController" />
-        </element>
-        <element id="directory" name="library">
-          <element id="archive" name="pLaunchControl.jar">
-            <element id="module-output" name="pLaunchController" />
-            <element id="directory" name="META-INF">
-              <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
-            </element>
+        <element id="directory" name="pLaunchControl">
+          <element id="directory" name="examples">
+            <element id="dir-copy" path="$PROJECT_DIR$/examples" />
           </element>
-          <element id="library" level="project" name="uk.co.xfactory.librarians.coremidi4j" />
+          <element id="directory" name="reference">
+            <element id="dir-copy" path="$PROJECT_DIR$/reference" />
+          </element>
+          <element id="directory" name="src">
+            <element id="module-source" name="pLaunchController" />
+          </element>
+          <element id="file-copy" path="$PROJECT_DIR$/library.properties" />
+          <element id="directory" name="library">
+            <element id="archive" name="pLaunchControl.jar">
+              <element id="directory" name="META-INF">
+                <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+              </element>
+              <element id="module-output" name="pLaunchControl" />
+            </element>
+            <element id="library" level="project" name="uk.co.xfactory.librarians.coremidi4j" />
+          </element>
         </element>
-        <element id="directory" name="reference">
-          <element id="dir-copy" path="$PROJECT_DIR$/reference" />
-        </element>
-        <element id="directory" name="examples">
-          <element id="dir-copy" path="$PROJECT_DIR$/examples" />
-        </element>
-        <element id="file-copy" path="$PROJECT_DIR$/library.properties" />
       </element>
     </root>
   </artifact>

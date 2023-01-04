@@ -1,12 +1,13 @@
 package pLaunchControl;
 
 import pLaunchControl.midi.MidiDevice;
+import pLaunchControl.*;
 
 import javax.sound.midi.MidiMessage;
-import uk.co.xfactorylibrarians.coremidi4j.CoreMidiReceiver;
-
 import javax.sound.midi.Receiver;
 import javax.sound.midi.SysexMessage;
+
+import static pLaunchControl.PADMODE.*;
 
 
 /**

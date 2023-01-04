@@ -1,6 +1,5 @@
 package pLaunchControl;
 
-
 /**
  * A list of numbers that represent sliders on midi devices.
  * This list is device-agnostic. To use a list that is

@@ -2,13 +2,12 @@ package pLaunchControl;
 
 import pLaunchControl.midi.MidiDevice;
 import processing.core.PApplet;
+import uk.co.xfactorylibrarians.coremidi4j.CoreMidiDeviceProvider;
 
 import javax.sound.midi.MidiMessage;
 import javax.sound.midi.MidiSystem;
 import javax.sound.midi.MidiUnavailableException;
 import java.lang.reflect.Method;
-
-import uk.co.xfactorylibrarians.coremidi4j.CoreMidiDeviceProvider;
 
 import static processing.core.PApplet.println;
 

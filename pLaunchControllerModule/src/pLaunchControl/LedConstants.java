@@ -1,6 +1,5 @@
 package pLaunchControl;
 
-
 /**
  * Hexadecimal values representing the possible combinations of color and intensity of
  * pads in the MIDI controller.

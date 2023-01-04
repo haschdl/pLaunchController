@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/pLaunchController.iml" filepath="$PROJECT_DIR$/pLaunchController.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pLaunchControllerModule/pLaunchControl.iml" filepath="$PROJECT_DIR$/pLaunchControllerModule/pLaunchControl.iml" />
     </modules>
   </component>
 </project>
