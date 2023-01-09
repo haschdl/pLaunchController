@@ -40,7 +40,7 @@ public class Knob {
     /**
      * Sets the default value of the Knob object. You can read the current value of the Knob with {@link #value() value()}.
      * @param defaultValue The default value to assign Knob object. Remember that calling defaultValue() does not change the
-     *                     position of the physical knob, but it's useful to set a initial value to the attached variable.
+     *                     position of the physical knob, but it's useful to set an initial value to the attached variable.
      * @return The Knob itself.
      */
     public Knob defaultValue(float defaultValue) {
@@ -78,7 +78,7 @@ public class Knob {
     }
 
     /**
-     * Sets the minimum and maximum values to return when knobs is at its minimum and maximum
+     * Sets the minimum and maximum values to return when knobs are at their minimum and maximum
      * position, respectively. You can use range() instead of calling {@link #minValue(float)}
      * and {@link #maxValue(float)}
      *
@@ -162,7 +162,7 @@ public class Knob {
             field.setFloat(parent, value);
         }
         catch (IllegalAccessException e) {
-            System.err.println(String.format("Error: It was not possible to set the value of the variable %s. Error message: %s", fieldName, e.getMessage()));
+            System.err.printf("Error: It was not possible to set the value of the variable %s. Error message: %s%n", fieldName, e.getMessage());
         }
 
     }

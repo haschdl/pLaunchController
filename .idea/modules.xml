@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/pLaunchControllerModule/pLaunchControl.iml" filepath="$PROJECT_DIR$/pLaunchControllerModule/pLaunchControl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/pLaunchControlApp.iml" filepath="$PROJECT_DIR$/app/pLaunchControlApp.iml" />
     </modules>
   </component>
 </project>

@@ -18,8 +18,7 @@ public class Utils {
     protected static MidiMessage getResetMessage(int channel) {
         try {
             int status = 0xB0 + channel;
-            ShortMessage reset = new ShortMessage(status, 0x00, 0x00);
-            return reset;
+            return new ShortMessage(status, 0x00, 0x00);
         } catch (InvalidMidiDataException e) {
             return null;
         }
@@ -44,8 +43,7 @@ public class Utils {
         try {
             byte template = 0x08;
             byte[] msgContent = new byte[]{(byte) 0xF0, 0x00, 0x20, 0x29, 0x02, 0x0A, 0x77, template, (byte) 0xF7};
-            SysexMessage setTemplateMsg = new SysexMessage(msgContent, msgContent.length);
-            return setTemplateMsg;
+            return new SysexMessage(msgContent, msgContent.length);
 
         } catch (Exception e) {
             System.out.println("Error setting the template in the Midi controller. Error: " + e);
@@ -63,8 +61,7 @@ public class Utils {
             throw new IllegalArgumentException("Template must be in the 0x00-0x0F (00h-07h (0-7) for the 8 user templates, and 08h-0Fh (8-15) for the 8 factory templates.");
         try {
             int status = 0xB0 + template;
-            ShortMessage turnFlashingLEDsOn = new ShortMessage(status, 0x00, 0x28);
-            return turnFlashingLEDsOn;
+            return new ShortMessage(status, 0x00, 0x28);
         } catch (InvalidMidiDataException e) {
             return null;
         }

@@ -1,34 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="4" />
+  </component>
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="pLaunchControl:jar" />
+      <artifact name="processingLibrariesLocal" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79e7d7a1-5c5b-44e1-a6be-83c5765af82f" name="Default" comment="Several adjustments to documentation and code related to renaming of Launch Controller to Launch Control. Added feature for flashing lights. Fix #6">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/pLaunchControl_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/Attach_to_Processing_VM____8000.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pLaunchControllerModule/pLaunchControl.iml" afterDir="false" />
+    <list default="true" id="79e7d7a1-5c5b-44e1-a6be-83c5765af82f" name="Default" comment="Added examples that can be executed from IntelliJ and run a debug session without PDE. Implements #14">
+      <change afterPath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/MidiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/pLaunchControl_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/pLaunchControl_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/processingLibrariesLocal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/processingLibrariesLocal.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pLaunchController.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pLaunchController.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchController.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pLaunchControl/KNOBS.java" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/KNOBS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pLaunchControl/Knob.java" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/Knob.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pLaunchControl/LaunchControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/LaunchControl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pLaunchControl/LaunchControlDeviceReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/LaunchControlDeviceReceiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pLaunchControl/LaunchControlXL.java" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/LaunchControlXL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pLaunchControl/LedConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/LedConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pLaunchControl/PADMODE.java" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/PADMODE.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pLaunchControl/PADS.java" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/PADS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pLaunchControl/Pad.java" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/Pad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pLaunchControl/SLIDERS.java" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/SLIDERS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pLaunchControl/Slider.java" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/Slider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pLaunchControl/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pLaunchControl/midi/MidiDevice.java" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/midi/MidiDevice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pLaunchControllerModule/pLaunchControl.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchControllerModule/pLaunchControl.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/Knob.java" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/Knob.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/LaunchControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/LaunchControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/LaunchControlDeviceReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/LaunchControlDeviceReceiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/LaunchControlXL.java" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/LaunchControlXL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/PADMODE.java" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/PADMODE.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/Slider.java" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/Slider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/midi/MidiDevice.java" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/midi/MidiDevice.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,25 +215,30 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.25287357" />
+    <property name="run.code.analysis.last.selected.profile" value="aDefault" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="pLaunchControl" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/examples" />
       <recent name="C:\CreativeCoding\Java\pLaunchController\.github" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pLaunchControllerModule" />
       <recent name="$PROJECT_DIR$/pLaunchControllerModule/src" />
       <recent name="$PROJECT_DIR$/pLaunchControl" />
       <recent name="$PROJECT_DIR$/" />
       <recent name="$PROJECT_DIR$/resources" />
-      <recent name="$PROJECT_DIR$/examples/LaunchControllerDemo" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
       <recent name="pLaunchControl" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Run sketch LunchControlXL">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -273,6 +273,15 @@
       <properties />
       <listeners />
     </configuration>
+    <configuration name="Run sketch LunchControlXL" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home" />
+      <option name="MAIN_CLASS_NAME" value="SketchLaunchControlXL" />
+      <module name="pLaunchControlApp" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -297,6 +306,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Run sketch LunchControl" />
+      <item itemvalue="Application.Run sketch LunchControlXL" />
+      <item itemvalue="Remote JVM Debug.Attach to Processing VM" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -440,7 +454,21 @@
       <option name="project" value="LOCAL" />
       <updated>1650490487970</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Trying to enable remote debugging. Breakpoints are not hit">
+      <created>1672833677423</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1672833677423</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Added examples that can be executed from IntelliJ and run a debug session without PDE. Implements #14">
+      <created>1673272032610</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1673272032610</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -514,19 +542,31 @@
     <MESSAGE value="Adding reference to Launch Control XL programmers reference. Due to the importance of the definitions in this file in the implementation, I decided to embed a copy of the PDF in the repo." />
     <MESSAGE value="Several adjustments to documentation and code related to renaming of Launch Controller to Launch Control. Added feature for flashing lights." />
     <MESSAGE value="Several adjustments to documentation and code related to renaming of Launch Controller to Launch Control. Added feature for flashing lights. Fix #6" />
-    <option name="LAST_COMMIT_MESSAGE" value="Several adjustments to documentation and code related to renaming of Launch Controller to Launch Control. Added feature for flashing lights. Fix #6" />
+    <MESSAGE value="Trying to enable remote debugging. Breakpoints are not hit" />
+    <MESSAGE value="Added examples that can be executed from IntelliJ and run a debug session without PDE. Implements #14" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added examples that can be executed from IntelliJ and run a debug session without PDE. Implements #14" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/LaunchControlDeviceReceiver.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="10" />
+          <url>file://$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/MidiController.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
-        <breakpoint enabled="true" type="java-exception" />
+        <breakpoint enabled="true" type="java-exception">
+          <properties>
+            <option name="class-filters-enabled" value="true" />
+            <catch-class-filters>
+              <class-filter pattern="PApplet" />
+            </catch-class-filters>
+            <class-filters>
+              <class-filter pattern="processing.core.PApplet" />
+            </class-filters>
+          </properties>
+        </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
   </component>

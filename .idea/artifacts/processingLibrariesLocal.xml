@@ -8,7 +8,7 @@
             <element id="directory" name="META-INF">
               <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
             </element>
-            <element id="module-output" name="pLaunchControl" />
+            <element id="module-output" name="pLaunchControlApp" />
           </element>
           <element id="library" level="project" name="uk.co.xfactory.librarians.coremidi4j" />
         </element>
@@ -34,7 +34,7 @@
               <element id="directory" name="META-INF">
                 <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
               </element>
-              <element id="module-output" name="pLaunchControl" />
+              <element id="module-output" name="pLaunchControlApp" />
             </element>
             <element id="library" level="project" name="uk.co.xfactory.librarians.coremidi4j" />
           </element>

@@ -1,13 +1,10 @@
 package pLaunchControl;
 
 import pLaunchControl.midi.MidiDevice;
-import pLaunchControl.*;
 
 import javax.sound.midi.MidiMessage;
 import javax.sound.midi.Receiver;
 import javax.sound.midi.SysexMessage;
-
-import static pLaunchControl.PADMODE.*;
 
 
 /**
@@ -15,8 +12,8 @@ import static pLaunchControl.PADMODE.*;
  */
 class LaunchControlDeviceReceiver implements Receiver {
 
-    private MidiDevice parent;
-    private javax.sound.midi.MidiDevice device;
+    private final MidiDevice parent;
+    private final javax.sound.midi.MidiDevice device;
 
     LaunchControlDeviceReceiver(MidiDevice parent, javax.sound.midi.MidiDevice device) {
         this.parent = parent;
@@ -41,8 +38,8 @@ class LaunchControlDeviceReceiver implements Receiver {
             // Print contents of sysex message
             System.out.println();
             System.out.print("Sysex MIDI message <<");
-            for (int i = 0; i < lastMessage.length; i++) {
-                System.out.print(" " + lastMessage[i]);
+            for (byte b : lastMessage) {
+                System.out.print(" " + b);
             }
             System.out.println(">>");
             return;
@@ -57,10 +54,10 @@ class LaunchControlDeviceReceiver implements Receiver {
         else if (parent.isPad(message)) {
             PADS padToChange = parent.getPadFromMessage(message);
             //TODO padToChange is null when "note off" (button released) message
-            //is received ( byts[2] == 0)
+            //is received ( bytes[2] == 0)
             if (padToChange != null) {
                 if (parent.debug())
-                    System.out.println(String.format("Received message for pad %s.", padToChange.toString()));
+                    System.out.printf("Received message for pad %s.%n", padToChange);
                 parent.invertPad(padToChange);
                 switch (parent.getPadMode()) {
                     case RADIO:

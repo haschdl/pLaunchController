@@ -40,7 +40,7 @@ public class Slider {
     /**
      * Sets the default value of the Slider object. You can read the current value of the Slider with {@link #value() value()}.
      * @param defaultValue The default value to assign Slider object. Remember that calling defaultValue() does not change the
-     *                     position of the physical slider, but it's useful to set a initial value to the attached variable.
+     *                     position of the physical slider, but it's useful to set an initial value to the attached variable.
      * @return The Slider itself.
      */
     public Slider defaultValue(float defaultValue) {
@@ -78,7 +78,7 @@ public class Slider {
     }
 
     /**
-     * Sets the minimum and maximum values to return when sliders is at its minimum and maximum
+     * Sets the minimum and maximum values to return when sliders are at its minimum and maximum
      * position, respectively. You can use range() instead of calling {@link #minValue(float)}
      * and {@link #maxValue(float)}
      *
@@ -163,7 +163,7 @@ public class Slider {
             field.setFloat(parent, value);
         }
         catch (IllegalAccessException e) {
-            System.err.println(String.format("LaunchControl Error: It was not possible to set the value of the variable %s. Error message: %s", fieldName, e.getMessage()));
+            System.err.printf("LaunchControl Error: It was not possible to set the value of the variable %s. Error message: %s%n", fieldName, e.getMessage());
         }
 
     }

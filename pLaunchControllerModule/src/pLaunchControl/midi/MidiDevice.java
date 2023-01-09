@@ -23,8 +23,6 @@ public interface MidiDevice {
 
     boolean debug();
 
-    void close();
-
     /**
      * Check if a Midi message is from a Knob.
      * @param message
