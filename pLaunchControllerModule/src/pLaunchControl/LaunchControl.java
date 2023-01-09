@@ -38,7 +38,7 @@ import static processing.core.PApplet.println;
  * (*) In Processing, simply add a new method with the names and parameters as above.
  *
  */
-public class LaunchControl implements MidiDevice {
+public class LaunchControl extends MidiController implements MidiDevice {
     public static final String DEVICE_NAME_SUFFIX = "Launch Control";
     Method controllerChangedEventMethod, knobChangedEventMethod, padChangedEventMethod;
     private static final String controlChangedEventName = "LaunchControlChanged";
@@ -51,14 +51,9 @@ public class LaunchControl implements MidiDevice {
     private final Knob[] knobValues = new Knob[KNOB_COUNT];
     private final Pad[] padValues = new Pad[PAD_COUNT];
 
-    javax.sound.midi.MidiDevice deviceIn;
-    javax.sound.midi.MidiDevice deviceOut;
+
     javax.sound.midi.MidiDevice.Info[] infoList;
     LaunchControlDeviceReceiver receiver;
-
-    public boolean debug;
-
-    PApplet parent;
 
     /***
      * Returns the {@link Knob} object for one of the knobs in the controller.
@@ -132,8 +127,7 @@ public class LaunchControl implements MidiDevice {
 
 
     public LaunchControl(PApplet parent, boolean debug, String deviceName) throws MidiUnavailableException {
-        this.parent = parent;
-        this.debug = debug;
+        super(parent, debug);
         for (int i = 0; i < KNOB_COUNT; i++) {
             knobValues[i] = new Knob(i, parent);
         }
@@ -198,7 +192,6 @@ public class LaunchControl implements MidiDevice {
         deviceOut.getReceiver().send(Utils.getResetMessage(), -1);
         println("Setting to factory template...");
         deviceOut.getReceiver().send(Utils.getSetTemplateMessage(), -1);
-
 
         setPadMode(PADMODE.TOGGLE);
         println("LaunchControl ready!");
@@ -344,20 +337,9 @@ public class LaunchControl implements MidiDevice {
         return debug;
     }
 
-    /***
-     * Clean-up operations executed when
-     * the parent sketch shuts down.
-     */
-    public void close() {
 
-        if (deviceIn.isOpen()) {
-            deviceIn.close();
-        }
 
-        if (deviceOut.isOpen()) {
-            deviceOut.close();
-        }
-    }
+
 
     /**
      * @return The {@link PADMODE} describing the mode of operation for pads.

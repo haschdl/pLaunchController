@@ -47,7 +47,7 @@ import static processing.core.PApplet.println;
  * The parameter pad will have the value of which pad was changed.</p>
  */
 
-public class LaunchControlXL implements pLaunchControl.midi.MidiDevice {
+public class LaunchControlXL extends MidiController implements pLaunchControl.midi.MidiDevice {
 	
     Method controllerChangedEventMethod, knobChangedEventMethod, sliderChangedEventMethod, padChangedEventMethod;
 
@@ -57,14 +57,12 @@ public class LaunchControlXL implements pLaunchControl.midi.MidiDevice {
     private static final String sliderChangedEventName = "LaunchControlSliderChanged";
     private static final String padChangedEventName = "LaunchControlPadChanged";
 
-    private Knob[] knobValues = new Knob[24];
-    private Slider[] sliderValues = new Slider[8];
-    private Pad[] padValues = new Pad[16];
+    private final Knob[] knobValues = new Knob[24];
+    private final Slider[] sliderValues = new Slider[8];
+    private final Pad[] padValues = new Pad[16];
 
     private PADMODE padMode;    
 
-    javax.sound.midi.MidiDevice deviceIn;
-    javax.sound.midi.MidiDevice deviceOut;
     javax.sound.midi.MidiDevice.Info[] infos = null;
     
     LaunchControlDeviceReceiver receiver;
@@ -82,6 +80,7 @@ public class LaunchControlXL implements pLaunchControl.midi.MidiDevice {
     }
 
     public LaunchControlXL(PApplet parent, boolean debug, String deviceName) throws MidiUnavailableException {
+        super(parent,debug);
         this.parent = parent;
         for (int i = 0, l = KNOBS.values().length; i < l; i++) {
             knobValues[i] = new Knob(i,parent);
@@ -96,7 +95,7 @@ public class LaunchControlXL implements pLaunchControl.midi.MidiDevice {
         for (javax.sound.midi.MidiDevice.Info info : infos) {
             javax.sound.midi.MidiDevice device = MidiSystem.getMidiDevice(info);
             if (this.debug)
-                System.out.println(String.format("Device: %s \t Receivers: %d \t Transmitters: %d", info, device.getMaxReceivers(), device.getMaxTransmitters()));
+                System.out.printf("Device: %s \t Receivers: %d \t Transmitters: %d%n", info, device.getMaxReceivers(), device.getMaxTransmitters());
             if ((deviceName != null && info.getName().endsWith(deviceName)) || info.getName().endsWith(DEVICE_NAME_SUFFIX)) {
                 if (device.getMaxReceivers() == 0) {
                     deviceIn = device;
@@ -120,21 +119,21 @@ public class LaunchControlXL implements pLaunchControl.midi.MidiDevice {
             controllerChangedEventMethod =
                     parent.getClass().getMethod(controlChangedEventName);
         } catch (Exception e) {
-            // no such method, or an error.. which is fine, just ignore
+            // no such method, or an error, which is fine, just ignore
         }
 
         try {
             knobChangedEventMethod =
                     parent.getClass().getMethod(knobChangedEventName, KNOBS.class);
         } catch (Exception e) {
-            // no such method, or an error.. which is fine, just ignore
+            // no such method, or an error, which is fine, just ignore
         }
 
         try {
             sliderChangedEventMethod =
                     parent.getClass().getMethod(sliderChangedEventName, SLIDERS.class);
         } catch (Exception e) {
-            // no such method, or an error.. which is fine, just ignore
+            // no such method, or an error. which is fine, just ignore
         }
         
         try {
@@ -287,7 +286,6 @@ public class LaunchControlXL implements pLaunchControl.midi.MidiDevice {
                 setSliderPosition(SLIDERS.SLIDER_8, msgBytes[2]);
                 break;
         }
-        return;
     }
 
     @Override
@@ -383,22 +381,6 @@ public class LaunchControlXL implements pLaunchControl.midi.MidiDevice {
         return pad;
     }
 
-    /***
-     * Clean-up operations executed when when
-     * the parent sketch shuts down.
-     */
-    @Override
-    public void close() {
-
-        if (deviceIn.isOpen()) {
-            deviceIn.close();
-        }
-
-        if (deviceOut.isOpen()) {
-            deviceOut.close();
-        }
-    }
-    
     // ****** KNOBS ****** //
 
     /***
@@ -490,7 +472,7 @@ public class LaunchControlXL implements pLaunchControl.midi.MidiDevice {
 
     /***
      * The status of a given {@link PADS} as a boolean value.
-     * Alternative, you can get the status of a pad a int value with {@link LaunchControl#getPadInt(PADS)}
+     * Alternative, you can get the status of a pad as an int value with {@link LaunchControl#getPadInt(PADS)}
      * @param pad The pad to check.
      * @return True if the pad is "on", False otherwise.
      */
@@ -617,8 +599,7 @@ public class LaunchControlXL implements pLaunchControl.midi.MidiDevice {
 
     private static MidiMessage getResetMessage() {
         try {
-            ShortMessage reset = new ShortMessage(184, 0, 0);
-            return reset;
+            return new ShortMessage(184, 0, 0);
         } catch (InvalidMidiDataException e) {
             return null;
         }
