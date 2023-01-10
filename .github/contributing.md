@@ -1,6 +1,10 @@
 # Building a new version
 In my setup I configured IntelliJ to generate the correct folder structure using Build->Build Artifacts.
-The only manual step before publishing is to rename `library.properties` to `pLaunchControl.txt`
+
+There are 2 manual steps before publishing a new release.
+
+1) Generated the documentation. In IntelliJ, go to `Tools` > `Generate Jadoc...`
+2) After building the new artefacts, rename `library.properties` to `pLaunchControl.txt` in the output folder.
 
 # Publishing a new version
 Publishing a new version to Processing library repository requires a Github release tagged with `latest`.

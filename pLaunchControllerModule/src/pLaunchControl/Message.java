@@ -5,13 +5,18 @@ import javax.sound.midi.MidiMessage;
 import javax.sound.midi.ShortMessage;
 import javax.sound.midi.SysexMessage;
 
-public class Utils {
+/**
+ * Provides MidiMessages to perform specific operations on the controller, such as resetting
+ * and setting a template.
+ */
+public class Message {
 
 
     /**
      * All LEDs are turned off, and the buffer settings and duty cycle are reset to their default values.
      * The MIDI channel n defines the template for which this message is intended (00h-07h (0-7) for the 8 user templates,
      * and 08h-0Fh (8-15) for the 8 factory templates).
+     *
      * @param channel
      * @return
      */
@@ -53,6 +58,7 @@ public class Utils {
 
     /**
      * Returns a message that turns all active LEDs to flashing.
+     *
      * @param template
      * @return
      */

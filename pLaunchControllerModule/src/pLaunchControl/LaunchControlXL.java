@@ -47,7 +47,7 @@ import static processing.core.PApplet.println;
  * The parameter pad will have the value of which pad was changed.</p>
  */
 
-public class LaunchControlXL extends MidiController implements pLaunchControl.midi.MidiDevice {
+public class LaunchControlXL extends MidiController implements MidiDevice {
 	
     Method controllerChangedEventMethod, knobChangedEventMethod, sliderChangedEventMethod, padChangedEventMethod;
 

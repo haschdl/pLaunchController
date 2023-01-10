@@ -4,7 +4,7 @@ package pLaunchControl;
  * A list of numbers that represent knobs on midi devices.
  * This list is device-agnostic. To use a list that is
  * limited to a given device, use an implementation of
- * {@link pLaunchControl.midi.MidiDevice}
+ * {@link MidiDevice}
  */
 public enum KNOBS {
     KNOB_01(0),

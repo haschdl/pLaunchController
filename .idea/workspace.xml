@@ -1,29 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AnalysisUIOptions">
-    <option name="SCOPE_TYPE" value="4" />
+    <option name="SCOPE_TYPE" value="8" />
+    <option name="CUSTOM_SCOPE_NAME" value="Library" />
   </component>
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="processingLibrariesLocal" />
+      <artifact name="Publishing" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79e7d7a1-5c5b-44e1-a6be-83c5765af82f" name="Default" comment="Added examples that can be executed from IntelliJ and run a debug session without PDE. Implements #14">
-      <change afterPath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/MidiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/pLaunchControl_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/pLaunchControl_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/processingLibrariesLocal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/processingLibrariesLocal.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="79e7d7a1-5c5b-44e1-a6be-83c5765af82f" name="Default" comment="General refactoring and project layout refactoring">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/contributing.md" beforeDir="false" afterPath="$PROJECT_DIR$/.github/contributing.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/pLaunchControl_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/processingLibrariesLocal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Publishing.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pLaunchControllerModule/pLaunchControl.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchControllerModule/pLaunchControl.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/Knob.java" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/Knob.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/library.properties" beforeDir="false" afterPath="$PROJECT_DIR$/library.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/KNOBS.java" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/KNOBS.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/LaunchControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/LaunchControl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/LaunchControlDeviceReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/LaunchControlDeviceReceiver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/LaunchControlXL.java" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/LaunchControlXL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/PADMODE.java" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/PADMODE.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/Slider.java" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/Slider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/midi/MidiDevice.java" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/midi/MidiDevice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/MidiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/MidiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/PADS.java" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/PADS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/SLIDERS.java" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/SLIDERS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/midi/MidiDevice.java" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/MidiDevice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/constant-values.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/help-doc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/index-files/index-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/index-files/index-10.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference/index-files/index-11.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/index-files/index-11.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference/index-files/index-12.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/index-files/index-12.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference/index-files/index-13.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/index-files/index-13.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference/index-files/index-14.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/index-files/index-14.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/index-files/index-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/index-files/index-3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/index-files/index-4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/index-files/index-5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/index-files/index-6.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/index-files/index-7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/index-files/index-8.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/index-files/index-9.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/overview-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/reference/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reference/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/reference/stylesheet.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +62,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="package-info" />
       </list>
     </option>
   </component>
@@ -111,6 +135,7 @@
   </component>
   <component name="NamedScopeManager">
     <scope name="MD files" pattern="*.md" />
+    <scope name="Library" pattern="src[pLaunchControl]:*..*" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -212,9 +237,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/examples" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.25287357" />
+    <property name="project.structure.side.proportion" value="0.17586207" />
     <property name="run.code.analysis.last.selected.profile" value="aDefault" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
@@ -468,7 +493,21 @@
       <option name="project" value="LOCAL" />
       <updated>1673272032610</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Introduces an abstract class MidiController.java which centralizes the shutdown operations. Further code could be moved to this class to reduce redundancy.  Relates to #13">
+      <created>1673272383819</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1673272383819</updated>
+    </task>
+    <task id="LOCAL-00024" summary="General refactoring and project layout refactoring">
+      <created>1673272498468</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1673272498468</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -544,14 +583,16 @@
     <MESSAGE value="Several adjustments to documentation and code related to renaming of Launch Controller to Launch Control. Added feature for flashing lights. Fix #6" />
     <MESSAGE value="Trying to enable remote debugging. Breakpoints are not hit" />
     <MESSAGE value="Added examples that can be executed from IntelliJ and run a debug session without PDE. Implements #14" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added examples that can be executed from IntelliJ and run a debug session without PDE. Implements #14" />
+    <MESSAGE value="Introduces an abstract class MidiController.java which centralizes the shutdown operations. Further code could be moved to this class to reduce redundancy.  Relates to #13" />
+    <MESSAGE value="General refactoring and project layout refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="General refactoring and project layout refactoring" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/MidiController.java</url>
-          <line>22</line>
+          <line>26</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>

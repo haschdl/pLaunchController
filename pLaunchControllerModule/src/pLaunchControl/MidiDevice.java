@@ -1,4 +1,4 @@
-package pLaunchControl.midi;
+package pLaunchControl;
 
 import pLaunchControl.*;
 

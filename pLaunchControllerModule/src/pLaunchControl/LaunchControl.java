@@ -1,6 +1,5 @@
 package pLaunchControl;
 
-import pLaunchControl.midi.MidiDevice;
 import processing.core.PApplet;
 import uk.co.xfactorylibrarians.coremidi4j.CoreMidiDeviceProvider;
 
@@ -189,9 +188,9 @@ public class LaunchControl extends MidiController implements MidiDevice {
 
 
         println("Resetting the controller...");
-        deviceOut.getReceiver().send(Utils.getResetMessage(), -1);
+        deviceOut.getReceiver().send(Message.getResetMessage(), -1);
         println("Setting to factory template...");
-        deviceOut.getReceiver().send(Utils.getSetTemplateMessage(), -1);
+        deviceOut.getReceiver().send(Message.getSetTemplateMessage(), -1);
 
         setPadMode(PADMODE.TOGGLE);
         println("LaunchControl ready!");
@@ -206,7 +205,7 @@ public class LaunchControl extends MidiController implements MidiDevice {
     }
 
     public void turnOnFlashing() {
-        MidiMessage turnOnFlashing = Utils.getTurnOnFlashing(0x08);
+        MidiMessage turnOnFlashing = Message.getTurnOnFlashing(0x08);
         sendMidiMessage(turnOnFlashing);
     }
 

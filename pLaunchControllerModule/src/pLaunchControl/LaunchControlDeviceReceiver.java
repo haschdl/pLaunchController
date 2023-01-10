@@ -1,7 +1,5 @@
 package pLaunchControl;
 
-import pLaunchControl.midi.MidiDevice;
-
 import javax.sound.midi.MidiMessage;
 import javax.sound.midi.Receiver;
 import javax.sound.midi.SysexMessage;

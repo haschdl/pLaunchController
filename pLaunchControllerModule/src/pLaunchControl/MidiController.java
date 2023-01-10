@@ -2,6 +2,10 @@ package pLaunchControl;
 
 import processing.core.PApplet;
 
+/**
+ * A generic controller in the series Launch Control, containing shared functionality
+ * for initialization and shut-down operations.
+ */
 public abstract class MidiController {
     public boolean debug;
     javax.sound.midi.MidiDevice deviceIn;
