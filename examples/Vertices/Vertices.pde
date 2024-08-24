@@ -27,7 +27,7 @@ float h = 100, base_w = 150;
 
 void setup() {
   size(640, 360, P3D);
-  
+  print("Running setup...");
   try {
     controller = new LaunchControl(this, true);
     controller.setPadMode(PADMODE.RADIO);
@@ -36,8 +36,8 @@ void setup() {
     //Calling setPad will also trigger launchControllerPadChanged(PADS pad) and 
     //automatically update "geometryOption". This is why is ok that geometryOption is not initialized.
     controller.setPad(PADS.PAD_1,true);  
-    controller.getKnob(KNOBS.KNOB_1_HIGH).range(10,200).defaultValue(h);
-    controller.getKnob(KNOBS.KNOB_2_HIGH).range(100,200).defaultValue(base_w);
+    controller.getKnob(KNOBS.KNOB_01).range(10,200).defaultValue(h);
+    controller.getKnob(KNOBS.KNOB_02).range(100,200).defaultValue(base_w);
   }
   catch(Exception e) {
     println("Unfortunately we could not detect that Launch Control is connected to this computer :(");
@@ -110,7 +110,7 @@ void drawCylinder(float topRadius, float bottomRadius, float tall, int sides) {
 }
 
 
-void launchControllerPadChanged(PADS pad) {
+void LaunchControlPadChanged(PADS pad) {
   println("Launch Control: the pad has changed value: " + pad.name());
   
   switch(pad) {
@@ -123,16 +123,18 @@ void launchControllerPadChanged(PADS pad) {
     case PAD_3:
       geometryOption = Options.MIX;
       break;
+    default:
+      break;
   }
 }
 
 
-void launchControllerKnobChanged(KNOBS knob) {
+void LaunchControlKnobChanged(KNOBS knob) {
   println("Launch Control knob changed: " + knob.name());
   
   //Updates the values of h and base_w with the knob values
   //Note that MIDI notes are 0-127, but in setup() we replace that with range(minValue,maxValue): controller.getKnob(KNOBS.KNOB_1_HIGH).range(10,200)
-  h = controller.getKnob(KNOBS.KNOB_1_HIGH).value();
-  base_w = controller.getKnob(KNOBS.KNOB_2_HIGH).value();
+  h = controller.getKnob(KNOBS.KNOB_01).value();
+  base_w = controller.getKnob(KNOBS.KNOB_02).value();
   
 }

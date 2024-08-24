@@ -9,44 +9,17 @@
       <artifact name="Publishing" />
     </artifacts-to-build>
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="79e7d7a1-5c5b-44e1-a6be-83c5765af82f" name="Default" comment="General refactoring and project layout refactoring">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/package-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/contributing.md" beforeDir="false" afterPath="$PROJECT_DIR$/.github/contributing.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/pLaunchControl_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/processingLibrariesLocal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Publishing.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/library.properties" beforeDir="false" afterPath="$PROJECT_DIR$/library.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/KNOBS.java" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/KNOBS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/pLaunchControlApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/pLaunchControlApp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/Vertices/Vertices.pde" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Vertices/Vertices.pde" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pLaunchControlApp/src/SketchLaunchControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchControlApp/src/SketchLaunchControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pLaunchControllerModule/pLaunchControl.iml" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchControllerModule/pLaunchControl.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/LaunchControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/LaunchControl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/LaunchControlDeviceReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/LaunchControlDeviceReceiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/LaunchControlXL.java" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/LaunchControlXL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/MidiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/MidiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/PADS.java" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/PADS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/SLIDERS.java" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/SLIDERS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/midi/MidiDevice.java" beforeDir="false" afterPath="$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/MidiDevice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reference/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/constant-values.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reference/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/help-doc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reference/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/index-files/index-1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reference/index-files/index-10.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/index-files/index-10.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reference/index-files/index-11.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/index-files/index-11.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reference/index-files/index-12.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/index-files/index-12.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reference/index-files/index-13.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/index-files/index-13.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reference/index-files/index-14.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/index-files/index-14.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reference/index-files/index-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/index-files/index-2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reference/index-files/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/index-files/index-3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reference/index-files/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/index-files/index-4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reference/index-files/index-5.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/index-files/index-5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reference/index-files/index-6.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/index-files/index-6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reference/index-files/index-7.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/index-files/index-7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reference/index-files/index-8.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/index-files/index-8.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reference/index-files/index-9.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/index-files/index-9.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reference/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reference/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/reference/overview-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reference/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/reference/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reference/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/reference/stylesheet.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +69,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;haschdl&quot;
+  }
+}</component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
       <filtered-out-file-type name="LOCAL_BRANCH" />
@@ -104,6 +83,12 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/haschdl/pLaunchController.git&quot;,
+    &quot;accountId&quot;: &quot;a4b20592-5259-41ba-be12-4714b55ae530&quot;
+  }
+}</component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -140,6 +125,9 @@
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="260" />
     <option name="y" value="20" />
@@ -224,25 +212,22 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="Downloaded.Files.Path.Enabled" value="false" />
-    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
-    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
-    <property name="GenerateAntBuildDialog.generateSingleFile" value="true" />
-    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="pLaunchController" />
-    <property name="Repository.Attach.Annotations" value="false" />
-    <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/examples" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.17586207" />
-    <property name="run.code.analysis.last.selected.profile" value="aDefault" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Run sketch LunchControl.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.Run sketch LunchControlXL.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="pLaunchControl" />
@@ -263,7 +248,7 @@
       <recent name="pLaunchControl" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Run sketch LunchControlXL">
+  <component name="RunManager" selected="Application.Run sketch LunchControl">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -271,62 +256,41 @@
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
     </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
       <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="Run sketch LunchControlXL" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home" />
       <option name="MAIN_CLASS_NAME" value="SketchLaunchControlXL" />
       <module name="pLaunchControlApp" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file enabled="true" id="idea.log" />
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -594,6 +558,16 @@
           <url>file://$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/MidiController.java</url>
           <line>26</line>
           <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/LaunchControl.java</url>
+          <line>176</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/pLaunchControllerModule/src/pLaunchControl/LaunchControl.java</url>
+          <line>175</line>
+          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>

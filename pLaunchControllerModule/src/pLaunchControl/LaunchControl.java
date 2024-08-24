@@ -173,9 +173,10 @@ public class LaunchControl extends MidiController implements MidiDevice {
 
         try {
             padChangedEventMethod =
-                    parent.getClass().getMethod(padChangedEventName, PADS.class);
+                    parent.getClass().getMethod(padChangedEventName,null);
         } catch (Exception e) {
             // no such method, or an error, which is fine, just ignore
+            println(e.toString());
         }
 
 
